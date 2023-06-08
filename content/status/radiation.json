@@ -1,0 +1,20 @@
+{
+        "name": "辐射",
+        "description": "你可以感受到你正在被蓝紫色的光辉腐蚀融化",
+        "damage":6,
+        "reloadMultiplier": 0.5,
+        "speedMultiplier": 0.6,
+	"effectChance":0.5,
+    "effect":{	"type": "ParticleEffect",
+        "particles": 1,
+        "baseLength": 0,
+        "length":35,
+        "lifetime": 60,
+        "spin":3,
+        "region":"rad-radia",
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "colorFrom": "AFA1FFFF",
+        "colorTo": "A1CEFFFF",
+        "cone":360 }
+    }

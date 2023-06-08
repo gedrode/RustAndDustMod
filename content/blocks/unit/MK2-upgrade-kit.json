@@ -1,0 +1,32 @@
+{
+	"type": "Reconstructor",
+	"name": "MK2升级套件",
+	"description": "升级输入的单位至第二等级",
+    "health":600,
+	"size":3,
+	"consumes":{
+		"power":2,
+		"items": {	"items": [
+	{"item":"silicon","amount":40},
+	{"item":"steel","amount":50},
+	{ "item": "primary-processor", "amount": 10 }
+	]
+		}
+},
+	"upgrades":[
+        ["T1","T2"],
+		["A1","A2"]
+	],
+
+	"constructTime":1600,
+	"requirements": [
+		{"item":"steel","amount":100},
+    	{"item":"silicon","amount":150},
+		{"item":"titanium","amount":200},
+		{"item":"primary-processor","amount":50}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"steel-unit-factory"
+}
+

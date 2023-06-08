@@ -1,0 +1,34 @@
+{
+    "name":"钢制钻头",
+    "type": "Drill",
+    "description":"可能是换装钢钻头的气动？总而言之，前期挖钍，不在困难",
+    "size": 2,
+    "health": 490,
+    "tier": 4,
+    "drillTime": 180,   
+    "liquidBoostIntensity":2,
+    	"researchCostMultiplier": 0.9,
+        "buildCostMultiplier": 0.35,
+    "canOverdrive": true,
+    "warmupSpeed": 0.01,
+    "drillEffect": "none",
+    "updateEffect": "none",
+    "rotateSpeed": 2,
+    "drawMineItem": true,
+    "consumes": {
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.05,
+            "booster": true,
+            "optional": true
+        }
+    },
+    "itemCapacity": 10,
+    "liquidCapacity": 10,
+    "requirements": [	
+   { "item": "steel", "amount": 25 },
+   { "item": "graphite", "amount": 16 }
+    ],
+    "category": "production",
+    "research": "Greelian"
+}

@@ -1,0 +1,32 @@
+{
+	"type": "Reconstructor",
+	"name": "MK3升级套件",
+	"description": "升级输入的单位至第三等级",
+    "health":600,
+	"size":5,
+	"consumes":{
+		"power":2,
+		"items": {	"items": [
+	{"item":"silicon","amount":140},
+	{"item":"steel","amount":150},
+	{ "item": "primary-processor", "amount": 45 }
+	]
+		}
+},
+	"upgrades":[
+        ["T2","T3"],
+		["A2","A3"]
+	],
+
+	"constructTime":3600,
+	"requirements": [
+		{"item":"steel","amount":600},
+    	{"item":"thorium","amount":450},
+		{"item":"titanium","amount":500},
+		{"item":"primary-processor","amount":150}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"MK2-upgrade-kit"
+}
+

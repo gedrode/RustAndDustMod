@@ -1,0 +1,76 @@
+{
+	"type": "ItemTurret",
+	"name": "居里",
+	"description": "中大型霰弹炮台,使用具有放射性的镭作弹药",
+	"details":"这nmd叫狙里夫人吧啊喂！",
+	"health": 3600,
+	"size": 5,
+	"reload": 100,
+	"range": 320,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"type": "ShootSpread",
+		"shots": 40,
+		"spread": 0.7
+	},
+	"inaccuracy": 0.3,
+	"velocityRnd": 0.27,
+	"xRand": 0,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 12,
+	"shake": 1,
+	"shootSound": "CurieS",
+	"drag": 0.02,
+	"ammoTypes": {
+		"radium": {
+			"speed": 30,
+			"damage": 16,
+			"lifetime": 14,
+			"width": 2.5,
+			"height": 18,
+			"ammoMultiplier": 2,
+			"status": "radiation",
+		        "backColor": "A2BDEEFF",
+                         "frontColor": "BCB3F5FF",
+                             "hitEffect":{"type": "ParticleEffect",
+    "particles": 6,
+    "sizeFrom": 9,
+    "sizeTo": 0,
+    "line":true,
+    "length": 85,
+    "baseLength": 0,
+    "lifetime": 25,
+    "colorFrom": "BCB3F5FF",
+    "colorTo": "EB8CFFFF",
+    "cone": 80},
+			"shootEffect": "shootBig"
+		}
+	},
+	"researchCostMultiplier": 1,
+	"requirements": [
+		{
+			"item": "aluminumAlloy",
+			"amount": 225
+		},
+		{
+			"item": "radium",
+			"amount": 200
+		},
+		{
+			"item": "lead",
+			"amount": 320
+		},
+		{
+			"item": "zinc",
+			"amount": 315
+		}
+	],
+	"category": "turret",
+	"research": "Roentgen"
+}

@@ -1,0 +1,50 @@
+{
+	"type": "ItemTurret",
+	"name": "野蜂",
+	"description": "射出大量“野蜂”铝热智能导弹覆盖打击",
+	"health": 1080,
+	"size": 3,
+                "range":300,
+	"reload": 20,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"inaccuracy": 0.2,
+	"xRand": 0,
+	"shoot": {
+			"shots": 3,
+			"shotDelay": 2,
+			"type": "ShootAlternate",
+			"barrels": 3,
+			"spread": 4
+		},
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 12,
+	"shake": 1,
+	"shootSound": "shootAlt",
+	"drag": 0.006,
+	"targetAir":false,
+	"ammoTypes": {
+		"thermite": {
+                 "speed":10,
+                 "spawnUnit":"WBM"
+		}
+	},
+	"researchCostMultiplier": 1,
+	"requirements": [
+		{
+			"item": "steel",
+			"amount": 75
+		},
+		{
+			"item": "aluminumAlloy",
+			"amount": 185
+		}
+	],
+	"category": "turret",
+	"research": "halberd"
+}

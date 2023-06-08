@@ -1,0 +1,7 @@
+{
+"type": "OreBlock",
+"itemDrop": "radium",
+"mapColor":"8B8BE8FF",
+"playerUnmineable":true,
+"useColor":true
+}

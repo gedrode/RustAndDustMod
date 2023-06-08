@@ -1,0 +1,22 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "镭反应堆",
+    "category": "power",
+	"research": "MR",
+    "requirements": [
+        "aluminumAlloy/70","radium/50","lead/100","silicon/65","metaglass/50","zinc/70"
+    ],
+    "powerProduction": 20.00,
+    "itemDuration": 220.00,
+    "hasLiquids": true,
+    "hasItems": true,
+    "size": 5,
+    "consumes": {
+        "items": {
+            "items": ["radium/1"],
+            "optional": true,
+            "boost": false
+        },
+        "liquid": "water/1"
+    }
+} 

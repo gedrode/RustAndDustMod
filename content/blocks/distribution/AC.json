@@ -1,0 +1,14 @@
+{
+	"type": "Conveyor",
+	"name": "铝传送带",
+	"description": "对比普通传送带更为快速",
+	"health": 65,
+		"researchCostMultiplier": 1,
+	"requirements": [
+	{"item": "aluminum", "amount": 1}
+	],
+	"category": "distribution",
+	"research":"Greelian",
+	"speed": 0.15,
+	"displayedSpeed": 9
+}

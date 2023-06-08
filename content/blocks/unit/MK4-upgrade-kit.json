@@ -1,0 +1,32 @@
+{
+	"type": "Reconstructor",
+	"name": "MK4升级套件",
+	"description": "升级输入的单位至第四等级",
+    "health":1500,
+	"size":7,
+	"consumes":{
+		"power":4.5,
+		"items": {	"items": [
+	{"item":"silicon","amount":440},
+	{"item":"steel","amount":300},
+	{ "item": "primary-processor", "amount": 55 }
+	]
+		}
+},
+	"upgrades":[
+        ["T3","T4"],
+		["A3","A4"]
+	],
+
+	"constructTime":5600,
+	"requirements": [
+		{"item":"steel","amount":1600},
+    	{"item":"thorium","amount":950},
+		{"item":"titanium","amount":1000},
+		{"item":"primary-processor","amount":150}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"MK3-upgrade-kit"
+}
+

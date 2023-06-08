@@ -1,0 +1,175 @@
+{
+	"type": "tank",
+	"template":"tankUnitType",
+	"squareShape":true,
+	"omniMovement":false,
+	"rotateMoveFirst":true,
+	"rotateSpeed":2,
+	"speed": 0.65,
+	"hitSize": 40.5,
+	"health": 10850,
+	"armor": 16,
+	"drag": 0.08,  "accel":0.05,
+	"targetFlags": ["turret"],
+	"ammoType": "surge-alloy",
+	"ammoCapacity": 40,
+	"itemCapacity": 5,
+	"treadPullOffset":3,
+	"treadRects": [
+		{"x": 4,
+			"y": 2.75,
+			"width": 2,
+			"height": 4.5
+		},
+		{"x": 4,
+			"y": -4.5,
+			"width": 2,
+			"height": 4.5
+		}
+	],
+	"faceTarget": false,
+	"research": "T3",
+	"weapons":[
+		{	"name": "T4-weapon",
+		"layerOffset": 0.01,
+			"minWarmup": 0.99,
+			"shootWarmupSpeed": 0.05,
+			"reload": 20,
+			"recoil":3.5,
+			"x": 0,  "y": 0,
+			"rotate": true,
+			"rotateSpeed":1,
+			"mirror":false,
+			"parts": [
+				{
+					"type": "RegionPart",
+					"mirror": true,
+					"x": 0,
+					"y": 0,
+					"suffix": "-p",
+					"moveX": -5,
+					"moveY": 0,
+					"progress": "warmup",
+					"heatColor": "FF7055FF"
+				},
+				{
+					"type": "RegionPart",
+					"mirror": true,
+					"x": 0,
+					"y": 0,
+					"suffix": "-blade",
+					"under":true,
+					"moveX": -5,
+					"moveY": 8,
+					"progress": "warmup",
+					"heatColor": "FF7055FF"
+				},
+				{
+					"type": "RegionPart",
+					"mirror": false,
+					"x": 0,
+					"y": 0,
+					"suffix": "-bladem",
+					"under":true,
+					"moveX": 0,
+					"moveY": 8,
+					"progress": "warmup",
+					"heatColor": "FF7055FF"
+				}],
+			"shoot": {
+				"shots": 1,
+				"shotDelay": 3,
+				"type": "ShootAlternate",
+				"barrels": 4,
+				"spread": 10
+			},
+			"inaccuracy": 0,
+			"shootStatus": "slow",
+			"shootStatusDuration": 200,
+			"ejectEffect":"casing1",
+			"shootSound": "railgun",
+			"alternate": false,
+			"bullet":{
+				"type": "PointBulletType",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":35,
+					"lifetime": 60,
+					"spin":12,
+					"region":"rad-roehit",
+					"sizeFrom": 30,
+					"sizeTo": 0,
+					"colorFrom": "FFF89CFF",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 80,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "FFF89CFF",
+						"colorTo": "FFF89CFF"
+					}
+				]
+			},
+			"smokeEffect": "smokeCloud",
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 1,
+				"baseLength": -8,
+				"lifetime": 50,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 7,
+				"lenTo": 7,
+				"strokeFrom": 7,
+				"strokeTo": 0,
+				"colorFrom": "FFF89CFF",
+				"colorTo": "FFB866FF",
+				"cone": 0
+			},
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":35,
+					"lifetime": 60,
+					"spin":12,
+					"region":"rad-roehit",
+					"sizeFrom": 30,
+					"sizeTo": 0,
+					"colorFrom": "FFF89CFF",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 80,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "D85555FF",
+						"colorTo": "D85555FF"
+					}
+				]
+			},
+			"trailSpacing": 8,
+			"damage": 220,
+			"hitShake": 6,
+			"ammoMultiplier": 1,
+			"speed": 80,
+			"lifetime": 8,
+			"shootEffect": "instShoot",
+			"buildingDamageMultiplier": 0.9
+		}}
+		
+	]
+}

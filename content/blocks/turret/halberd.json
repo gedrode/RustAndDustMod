@@ -1,0 +1,70 @@
+{
+	"type": "ItemTurret",
+	"name": "长戟",
+	"description": "连发硬质金属炮弹，对敌造成刻骨铭心的打击",
+	"health": 700,
+	"size": 2,
+	"reload": 40,
+	"range": 180,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"shots": 4,
+		"shotDelay": 1,
+		"type": "ShootAlternate"
+	},
+	"inaccuracy": 0.2,
+	"xRand": 0,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 12,
+	"shake": 1,
+	"shootSound": "ZJ",
+	"drag": 0.02,
+	"ammoTypes": {
+		"iron": {
+			"speed": 10,
+			"damage": 40,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+		},
+		"steel": {
+			"speed": 12,
+			"damage": 52,
+			"lifetime": 22,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 4,
+			"shootEffect": "shootSmall"
+		},
+		"aluminumAlloy": {
+			"speed": 14,
+			"damage": 48,
+			"lifetime": 20,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+		}
+	},
+	"researchCostMultiplier": 0.75,
+	"requirements": [
+		{
+			"item": "steel",
+			"amount": 35
+		},
+		{
+			"item": "iron",
+			"amount": 65
+		}
+	],
+	"category": "turret",
+	"research": "temporary"
+}

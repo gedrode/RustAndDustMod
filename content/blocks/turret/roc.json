@@ -1,0 +1,57 @@
+{
+	"type": "ItemTurret",
+	"name": "“鹏”",
+	"description": "大型单发狙击炮台，每一发都是极大威力的贯穿性加速弹",
+	"details": "“扶摇直上九万里”",
+	"health": 1700,
+	"size": 5,
+	"reload": 140,
+	"range": 580,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"shots": 1,
+		"shotDelay": 1,
+		"type": "ShootAlternate"
+	},
+	"inaccuracy": 0,
+	"xRand": 0,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 12,
+	"shake": 1,
+	"shootSound": "rocs",
+	"ammoTypes": {
+		"titanium": {
+			"speed": 20,
+			"sprites":"rad-rocb",
+			"drag": -0.04,
+			"damage": 440,
+			"lifetime": 24,
+			"width": 18,
+			"height": 28,
+			"ammoMultiplier": 2,
+			"pierce": true,
+			"pierceBuilding": true,
+			"pierceCap": 10,
+			"shootEffect": "shootSmall"
+		}
+	},
+	"researchCostMultiplier": 0.75,
+	"requirements": [
+		{
+			"item": "steel",
+			"amount": 285
+		},
+		{
+			"item": "aluminumAlloy",
+			"amount": 365
+		}
+	],
+	"category": "turret",
+	"research": "shower"
+}

@@ -1,0 +1,19 @@
+{
+"name":"晕眩",
+	"description": "机器nmd是怎么被晕的啊喂！",
+	"speedMultiplier":0.75,
+	"reloadMultiplier":0.85,
+		"effect":{	"type": "ParticleEffect",
+    "particles": 2,
+    "baseLength": 2,
+    "length":10,
+    "lifetime": 10,
+    "line": true,
+    "lenFrom": 10,
+    "lenTo":0,
+    "strokeFrom": 1,
+    "strokeTo": 1,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "BCE7FFFF",
+    "cone":360 }
+}

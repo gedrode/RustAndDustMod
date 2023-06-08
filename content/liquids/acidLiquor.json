@@ -1,0 +1,14 @@
+{
+	"name": "酸性液体",
+	"description": "具有腐蚀性",
+	"details": "谁想到的把这B玩意灌进炮塔的？！！！还TM有效！！！",
+	"alwaysUnlocked":false,
+	"color": "7CF389FF",
+	"effect":"acid",
+	"flammability": 0,
+	"temperature": 0.3,
+	"heatCapacity": 1.2,
+	"viscosity": 0.3,
+	"explosiveness": 0,
+	"research": "Greelian"
+}

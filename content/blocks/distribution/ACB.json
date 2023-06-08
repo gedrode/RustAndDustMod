@@ -1,0 +1,19 @@
+{
+	"type": "ItemBridge",
+	"name":"铝传送带桥",
+	"armor": 4,
+	"range": 15,
+	"fadeIn": false,
+	"bridgeWidth": 1,
+	"hasPower": false,
+	"arrowSpacing": 6,
+	"transportTime": 1.6,
+	"moveArrows": false,
+	"placeableLiquid": true,
+	"requirements": [
+		"aluminum/5",
+		"iron/3",
+	],
+	"category": "distribution",
+	"research": "AC"
+}

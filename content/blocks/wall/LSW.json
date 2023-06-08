@@ -1,0 +1,15 @@
+{
+	"name": "大型钢墙",
+	"description": "大型钢制墙壁，更为坚固可靠。可以防御激光",
+	"type": "Wall",
+	"health": 2300,
+	"buildCostMultiplier": 0.65,
+	"size": 2,
+	"insulated": true,
+	"absorbLasers":true,
+	"requirements": [
+	{ "item": "steel", "amount": 24}
+	],
+	"category": "defense",
+	"research": "SW"
+}

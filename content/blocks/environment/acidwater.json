@@ -1,0 +1,11 @@
+{
+	"type": "floor",
+	"name": "acidwater",
+	"liquidDrop": "acidLiquor",
+	"status": "acid",
+	"cacheLayer":"water",
+	"speedMultiplier": 0.95,
+	"isLiquid":"true",
+	"variants":1,
+	"playerUnmineable": true
+}

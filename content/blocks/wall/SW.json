@@ -1,0 +1,15 @@
+{
+	"name": "钢墙",
+	"description": "使用合金建造的墙壁，更为坚固，可以防御激光攻击（虽然我也不知道它是怎么做到的）",
+	"type": "Wall",
+	"buildCostMultiplier": 0.6,
+	"health": 520,
+	"size": 1,
+	"insulated": true,
+	"absorbLasers":true,
+	"requirements": [
+	{ "item": "steel", "amount": 6}
+	],
+	"category": "defense",
+	"research": "IW"
+}

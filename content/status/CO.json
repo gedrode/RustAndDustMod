@@ -1,0 +1,20 @@
+{
+"name":"冲锋号令",
+	"damageMultiplier":0.85,
+	"speedMultiplier":1.4,
+	"reloadMultiplier":0.9,
+	"effectChance":0.5,
+	"effect":{	"type": "ParticleEffect",
+    "particles": 2,
+    "baseLength": 8,
+    "length":10,
+    "lifetime": 10,
+    "line": true,
+    "lenFrom": 0,
+    "lenTo":10,
+    "strokeFrom": 1,
+    "strokeTo": 0,
+    "colorFrom": "C7EDEBFF",
+    "colorTo": "C7EDEBFF",
+    "cone":360 }
+}

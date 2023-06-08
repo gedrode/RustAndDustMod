@@ -1,0 +1,72 @@
+{
+	"type": "ItemTurret",
+	"name": "临时炮塔",
+	"health": 300,
+	"size": 1,
+	"reload": 40,
+	"range": 120,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"type": "ShootSpread",
+		"shots": 9,
+		"spread": 2
+	},
+	"inaccuracy": 0.2,
+	"velocityRnd": 0.17,
+	"xRand": 0,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 12,
+	"shake": 1,
+	"shootSound": "410",
+	"drag": 0.02,
+	"ammoTypes": {
+		"copper": {
+			"speed": 5,
+			"damage": 11,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+		},
+		"scrap": {
+			"reloadMultiplier": 2,
+			"speed": 5,
+			"damage": 8,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 4,
+			"shootEffect": "shootSmall"
+		},
+				"lead": {
+			"reloadMultiplier": 0.8,
+			"speed": 5,
+			"damage": 12,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+		}
+	},
+	"researchCostMultiplier": 1,
+	"requirements": [
+		{
+			"item": "copper",
+			"amount": 25
+		},
+		{
+			"item": "lead",
+			"amount": 15
+		}
+	],
+	"category": "turret",
+	"research": "Greelian"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "“愿你安息”",
+"speedMultiplier": 0.7,
+"show": true,
+"effect": "melting",
+"affinities": ["tarred", "melting"],
+"transitionDamage": 5,
+"damage": 5,
+"healthMultiplier": 0.7
+}

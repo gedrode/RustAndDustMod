@@ -1,0 +1,35 @@
+{
+	"type": "GenericCrafter",
+	"name": "炼钢高炉",
+	"outputItem": { "item": "steel", "amount": 1},
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"buildCostMultiplier": 0.2,
+	"researchCostMultiplier": 0.6,
+	"hasItems": true,
+	"craftTime": 40,
+	"itemCapacity": 20,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            "DrawFlame"
+            ]
+    },
+	"consumes": {
+    "power":1,
+    "items": {
+	 "items": [
+	    { "item": "iron", "amount": 1 },
+		 { "item": "coal", "amount": 1 }  ]
+  }
+ },
+"requirements": [
+		{"item": "lead", "amount": 200},
+		{ "item": "graphite", "amount": 100 },
+		{"item": "iron","amount":100 }
+	],
+	"category": "crafting",
+	"research": "Greelian"
+}

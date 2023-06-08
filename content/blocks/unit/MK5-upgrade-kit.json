@@ -1,0 +1,32 @@
+{
+	"type": "Reconstructor",
+	"name": "MK5升级套件",
+	"description": "升级输入的单位至第五等级",
+    "health":1500,
+	"size":9,
+	"consumes":{
+		"power":6.5,
+		"items": {	"items": [
+	{"item":"silicon","amount":140},
+	{"item":"steel","amount":150},
+	{ "item": "primary-processor", "amount": 45 }
+	]
+		}
+},
+	"upgrades":[
+        ["T4","T5"],
+		["A4","A5"]
+	],
+
+	"constructTime":10600,
+	"requirements": [
+		{"item":"steel","amount":600},
+    	{"item":"thorium","amount":450},
+		{"item":"titanium","amount":500},
+		{"item":"primary-processor","amount":150}
+	],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"MK4-upgrade-kit"
+}
+

@@ -1,0 +1,435 @@
+{
+	"type": "ItemTurret",
+	"name": "伦琴",
+	"description": "中大型双轨速射轨道炮，使用放射性物质作弹药",
+	"details": "吔！食我伦琴射线辣！",
+	"health": 1350,
+	"consumes": {
+		"power": 6,
+		"coolant": {
+			"amount": 2,
+			"optional": true
+		}
+	},
+	"size": 4,
+	"reload": 120,
+	"range": 400,
+	"ammoPerShot": 2,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawTurret",
+				"parts": [
+					{
+						"type": "RegionPart",
+						"mirror": false,
+						"x": 0,
+						"y": 0,
+						"suffix": "-l",
+						"layer": 50,
+						"moveX": -3,
+						"moveY": 0,
+						"heatColor": "FF7055FF"
+					},
+					{
+						"type": "RegionPart",
+						"mirror": false,
+						"x": 0,
+						"y": 0,
+						"suffix": "-r",
+						"layer": 50,
+						"moveX": 3,
+						"moveY": 0,
+						"heatColor": "FF7055FF"
+					},
+					{
+						"type": "RegionPart",
+						"mirror": false,
+						"x": 0,
+						"y": 0,
+						"suffix": "-lu",
+						"layer": 49,
+						"moveX": 3,
+						"moveY": 2
+					},
+					{
+						"type": "RegionPart",
+						"mirror": false,
+						"x": 0,
+						"y": 0,
+						"suffix": "-ru",
+						"layer": 49,
+						"moveX": -3,
+						"moveY": 2
+					},
+					{
+						"type": "HaloPart",
+						"progress": "warmup",
+						"rotateSpeed": 0,
+						"shapeRotation": 180,
+						"x": 24,
+						"y": 33,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 5,
+						"triLength": 100,
+						"triLengthTo": 18,
+						"haloRadius": 0,
+						"haloRotation": 20,
+						"haloRotateSpeed": 0,
+						"layer": 110
+					},
+					{
+						"type": "HaloPart",
+						"progress": "warmup",
+						"rotateSpeed": 0,
+						"shapeRotation": 0,
+						"x": 24,
+						"y": 32,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 5,
+						"triLength": 500,
+						"triLengthTo": 160,
+						"haloRadius": 0,
+						"haloRotation": 0,
+						"haloRotateSpeed": 0,
+						"layer": 110
+					},
+					{
+						"type": "HaloPart",
+						"progress": "warmup",
+						"rotateSpeed": 0,
+						"shapeRotation": 180,
+						"x": -24,
+						"y": 33,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 5,
+						"triLength": 100,
+						"triLengthTo": 18,
+						"haloRadius": 0,
+						"haloRotation": -20,
+						"haloRotateSpeed": 0,
+						"layer": 110
+					},
+					{
+						"type": "HaloPart",
+						"progress": "warmup",
+						"rotateSpeed": 0,
+						"shapeRotation": 0,
+						"x": -24,
+						"y": 32,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 5,
+						"triLength": 500,
+						"triLengthTo": 160,
+						"haloRadius": 0,
+						"haloRotation": 0,
+						"haloRotateSpeed": 0,
+						"layer": 110
+					},
+					{
+						"type": "HaloPart",
+						"progress": {
+							"type": "warmup",
+							"op": "delay",
+							"amount": 0.25
+						},
+						"rotateSpeed": 0,
+						"shapeRotation": 0,
+						"y": 40,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 16,
+						"triLength": 500,
+						"triLengthTo": 16,
+						"haloRadius": 0,
+						"haloRotation": 0,
+						"haloRotateSpeed": 0,
+						"layer": 51
+					},
+					{
+						"type": "HaloPart",
+						"progress": {
+							"type": "warmup",
+							"op": "delay",
+							"amount": 0.5
+						},
+						"rotateSpeed": 0,
+						"shapeRotation": 0,
+						"y": 40,
+						"moveY": 45,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 16,
+						"triLength": 500,
+						"triLengthTo": 16,
+						"haloRadius": 0,
+						"haloRotation": 0,
+						"haloRotateSpeed": 0,
+						"layer": 51
+					},
+					{
+						"type": "HaloPart",
+						"progress": {
+							"type": "warmup",
+							"op": "delay",
+							"amount": 0.75
+						},
+						"rotateSpeed": 0,
+						"shapeRotation": 0,
+						"y": 40,
+						"moveY": 90,
+						"sides": 3,
+						"shapes": 1,
+						"color": "E796FFFF",
+						"colorTo": "969DFFFF",
+						"tri": true,
+						"hollow": true,
+						"radius": 0,
+						"radiusTo": 16,
+						"triLength": 500,
+						"triLengthTo": 16,
+						"haloRadius": 0,
+						"haloRotation": 0,
+						"haloRotateSpeed": 0,
+						"layer": 51
+					}
+				]
+			}
+		]
+	},
+			"shoot": {
+			"shots": 2,
+			"shotDelay": 2,
+			"type": "ShootAlternate",
+			"barrels": 2,
+			"spread": 8
+		},
+	"inaccuracy": 0,
+	"xRand": 0,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 3,
+	"shake": 2,
+	"shootSound": "railgun",
+	"ammoTypes": {
+		"thorium": {
+			"type": "PointBulletType",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":65,
+					"lifetime": 60,
+					"spin":12,
+					"region":"rad-roehit",
+					"sizeFrom": 35,
+					"sizeTo": 0,
+					"colorFrom": "ECACFFFF",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 108,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "D85555FF",
+						"colorTo": "D85555FF"
+					}
+				]
+			},
+			"smokeEffect": "smokeCloud",
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 1,
+				"baseLength": -8,
+				"lifetime": 50,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 11,
+				"lenTo": 11,
+				"strokeFrom": 7,
+				"strokeTo": 0,
+				"colorFrom": "DE8DEBFF",
+				"colorTo": "D1A9F4FF",
+				"cone": 0
+			},
+			"despawnEffect":{
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":65,
+					"lifetime": 60,
+					"spin":12,
+					"region":"rad-roehit",
+					"sizeFrom": 35,
+					"sizeTo": 0,
+					"colorFrom": "ECACFFFF",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 108,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "D85555FF",
+						"colorTo": "D85555FF"
+					}
+				]
+			},
+			"trailSpacing": 8,
+			"damage": 750,
+			"hitShake": 6,
+			"ammoMultiplier": 1,
+			"speed": 100,
+			"lifetime": 40,
+			"shootEffect": "instShoot",
+			"buildingDamageMultiplier": 0.3
+		},
+		"radium": {
+			"type": "PointBulletType",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":65,
+					"lifetime": 60,
+					"spin":12,
+					"region":"rad-roehit",
+					"sizeFrom": 40,
+					"sizeTo": 0,
+					"colorFrom": "B0ABFFFF",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 108,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "D85555FF",
+						"colorTo": "D85555FF"
+					}
+				]
+			},
+			"smokeEffect": "smokeCloud",
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 1,
+				"baseLength": -8,
+				"lifetime": 50,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 11,
+				"lenTo": 11,
+				"strokeFrom": 7,
+				"strokeTo": 0,
+				"colorFrom": "8CA3EBFF",
+				"colorTo": "978DEBFF",
+				"cone": 0
+			},
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":65,
+					"lifetime": 60,
+					"spin":12,
+					"region":"rad-roehit",
+					"sizeFrom": 40,
+					"sizeTo": 0,
+					"colorFrom": "B0ABFFFF",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 108,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "D85555FF",
+						"colorTo": "D85555FF"
+					}
+				]
+			},
+			"trailSpacing": 8,
+			"damage": 980,
+			"hitShake": 6,
+			"ammoMultiplier": 1,
+			"speed": 100,
+			"lifetime": 40,
+			"status": "radiation",
+			"pierceArmor": true,
+			"shootEffect": "instShoot",
+			"buildingDamageMultiplier": 0.3
+		}
+	},
+	"researchCostMultiplier": 0.75,
+	"requirements": [
+		{
+			"item": "aluminumAlloy",
+			"amount": 405
+		},
+			{
+			"item": "lead",
+			"amount": 885
+		},
+		{
+			"item": "silicon",
+			"amount": 485
+		},
+		{
+			"item": "radium",
+			"amount": 365
+		}
+	],
+	"category": "turret",
+	"research": "WB"
+}

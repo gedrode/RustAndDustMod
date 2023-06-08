@@ -1,0 +1,168 @@
+{
+	"type": "tank",
+	"name": "blasphemer",
+	"description": "[red][censored]",
+	"squareShape":true,
+	"omniMovement":false,
+	"rotateMoveFirst":true,
+	"rotateSpeed":3,
+	"speed": 0.6,
+	"hitSize": 28,
+	"ammoCapacity": 300,
+	"health": 65000,
+	"armor": 28,
+	"drag": 0.08,  "accel":0.05,
+	"itemCapacity": 5,
+	"treadPullOffset":3,
+	"treadRects": [
+		{"x": 4,
+			"y": 2.75,
+			"width": 2,
+			"height": 4.5
+		},
+		{"x": 4,
+			"y": -4.5,
+			"width": 2,
+			"height": 4.5
+		}
+	],
+	"faceTarget": false,
+	"abilities": [
+		{
+			"type": "ForceFieldAbility",
+			"radius": 60.0,
+			"regen": 5,
+			"max": 14000.0,
+			"cooldown": 360.0
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 75,
+			"angle": 180,
+			"width": 6,
+			"max": 6000,
+			"regen": 7.5,
+			"cooldown": 360,
+			"angleOffset": 0,
+			"whenShooting":"true"
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 90,
+			"angle": 175,
+			"width": 7,
+			"max": 7000,
+			"regen": 7.5,
+			"cooldown": 360,
+			"angleOffset": 0,
+			"whenShooting":"true"
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 105,
+			"angle": 160,
+			"width": 7,
+			"max": 7000,
+			"regen": 7.5,
+			"cooldown": 360,
+			"angleOffset": 0,
+			"whenShooting":"true"
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 120,
+			"angle": 145,
+			"width": 7,
+			"max": 7000,
+			"regen": 7.5,
+			"cooldown": 360,
+			"angleOffset": 0,
+			"whenShooting":"true"
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 135,
+			"angle": 130,
+			"width": 7,
+			"max": 5000,
+			"regen": 7.5,
+			"cooldown": 360,
+			"angleOffset": 0,
+			"whenShooting":"true"
+		}
+	],
+
+	"weapons":[
+		{	"name": "blasphemer-weapon",
+			"reload": 8,
+			"recoil":0,
+			"x": 0,  "y": 0,
+			"rotate": true,
+			"rotateSpeed":15,
+			"mirror":false,
+			"inaccuracy": 0,
+			"shootSound": "none",
+			"alternate": false,
+			"bullet":{
+				"type": "ContinuousFlameBulletType",
+				"damage":110,
+				"speed":0,
+				"lifetime":30,
+				"length": 200
+			}
+		},
+		{	"name": "blasphemer-weapon1",
+			"reload": 10,
+			"recoil":0,
+			"x": 18,  "y": -16,
+			"rotate": true,
+			"rotateSpeed":15,
+			"mirror":true,
+			"inaccuracy": 1,
+			"ejectEffect":"casing1",
+			"shootSound": "missile",
+			"alternate": false,
+			"shoot": {
+				"shots": 4,
+				"shotDelay": 3,
+				"type": "ShootAlternate",
+				"barrels": 3,
+				"spread": 4
+			},
+			"bullet": {
+				"type": "MissileBulletType",
+				"damage": 80,
+				"status": "burning",
+				"speed": 28,
+				"splashDamage":80,
+				"splashDamageRadius":40,
+				"lifetime": 14,
+				"width": 10,
+				"height": 20
+			}},
+		{	"name": "blasphemer-weapon2",
+			"reload": 40,
+			"recoil":3,
+			"x": 24,  "y": 6,
+			"rotate": true,
+			"rotateSpeed":12,
+			"mirror":true,
+			"inaccuracy": 0,
+			"ejectEffect":"casing1",
+			"shootSound": "SS",
+			"alternate": false,
+			"shoot": {
+				"type": "ShootSpread",
+				"shots": 10,
+				"spread": 0.8
+			},
+			"bullet":{
+				"type": "basicBulletType",
+				"damage":160,
+				"speed":16,
+				"lifetime":18,
+				"width":10,	 "height":20
+			}
+		}
+	]
+}

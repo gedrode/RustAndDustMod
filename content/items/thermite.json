@@ -1,0 +1,12 @@
+{
+	"name": "铝热剂",
+	"cost":6,
+	"color": "DEDEDEFF",
+	"alwaysUnlocked":false,   
+	"hardness":"3",
+	"healthScaling": 0,
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 114.514,
+	"research": "aluminum"
+}

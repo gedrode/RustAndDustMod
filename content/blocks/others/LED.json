@@ -1,0 +1,19 @@
+{
+	"type": "LightBlock",
+	"size": 2,
+	"armor": 4,
+	"radius": 270,
+	"brightness": 1.6,
+	"consumes": {
+		"power": 0.5
+	},
+	"requirements": [
+		"zinc/25",
+		"copper/15",
+		"silicon/10"
+	],
+	"category": "effect",
+	"research": {
+		"parent": "Greelian"
+	}
+}

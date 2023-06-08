@@ -1,0 +1,13 @@
+{
+	"name": "镭",
+        "description": "散发着蓝色光芒的高放射性金属，用于高威力弹药及小部分极端工业",
+        "details":"美丽且致命",
+	"cost":1,
+	"color": "8B8BE8FF",
+	"alwaysUnlocked":false,   
+	"hardness":"5",
+	"radioactivity": 10,
+	"explosiveness": 0,
+	"flammability": 0,
+	"research": "zinc"
+}

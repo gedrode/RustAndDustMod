@@ -1,0 +1,11 @@
+{
+    "type": "SolarGenerator",
+    "name": "锌太阳能板",
+    "category": "power",
+    "research": "IN",
+    "size":2,
+    "requirements": [
+        "zinc/15","silicon/10"
+    ],
+    "powerProduction": 1.5
+} 

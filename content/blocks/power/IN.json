@@ -1,0 +1,11 @@
+{
+  "type": "PowerNode",
+  "name": "铁质电力节点",
+  "category": "power",
+  "requirements": [
+    "copper/1","iron/2"
+  ],
+  "maxNodes": 12,
+  "laserRange": 8,
+  "research": "Greelian"
+}

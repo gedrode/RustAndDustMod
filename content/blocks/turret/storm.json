@@ -1,0 +1,179 @@
+{
+	"type": "ItemTurret",
+	"name": "惊霆",
+	"description": "双管叠排高平两用高速机炮，可以在短时间倾泻大量弹雨，但有一定冷却时间，需要注意",
+	"details": "丁达尔：格列利安限定，但是I AM THE STORM THAT IS APPROACHING！！！！",
+	"health": 2850,
+	"range":300,
+	"targetGround":true,
+	"size": 6,
+	"reload": 200,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"xRand":1.5,
+	"shoot": {
+		"shots": 40,
+		"shotDelay": 3,
+		"type": "ShootBarrel",
+		"barrels": [
+			5.5,6.25,0,
+			-5.5,6.25,0,
+			16,5.25,0,
+			-16,5.25,0
+		]
+	},
+	"inaccuracy": 0.5,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 8,
+	"shake": 1,
+	"shootSound": "STS",
+	"ammoTypes": {
+		"aluminum": {
+			"speed": 24,
+			"sprite": "rad-cross",
+			"damage": 30,
+			"lifetime": 20,
+			"width": 10,
+			"height": 10,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall",
+			"fragBullets": 4,
+			"fragRandomSpread": 45,
+			"fragSpread": 75,
+				"fragBullet": {
+					"type": "BasicBulletType",
+					"trailEffect": "none",
+					"damage": 18,
+					"speed": 8,
+					"pierce": true,
+					"pierceBuilding": false,
+					"pierceCap": 7,
+					"lifetime": 15,
+					"width": 8,
+					"height": 8,
+					"hitEffect": "flakExplosionBig",
+					"despawnEffect": "flakExplosionBig",
+					"fragBullets": 3,
+					"fragRandomSpread": 30,
+			"fragSpread": 100,
+				"fragBullet": {
+					"type": "BasicBulletType",
+					"trailEffect": "none",
+					"damage": 5,
+					"speed": 4.5,
+					"pierce": true,
+					"pierceBuilding": false,
+					"pierceCap": 7,
+					"lifetime": 18,
+					"width": 8,
+					"height": 8,
+					"hitEffect": "flakExplosionBig",
+					"despawnEffect": "flakExplosionBig"
+				}
+				}
+		},
+			"copper": {
+			"speed": 20,
+			"damage": 34,
+			"lifetime": 24,
+			"width": 10,
+			"height": 10,
+			"ammoMultiplier": 1.25,
+			"shootEffect": "shootSmall",
+                         "fragBullets": 3,
+		        "fragRandomSpread": 40,
+			"fragSpread": 120,
+				"fragBullet": {
+					"type": "BasicBulletType",
+					"trailEffect": "none",
+					"damage": 12,
+					"speed": 4,
+					"pierce": true,
+					"pierceBuilding": false,
+					"pierceCap": 7,
+					"lifetime": 15,
+					"width": 8,
+					"height": 8,
+					"hitEffect": "flakExplosionBig",
+					"despawnEffect": "flakExplosionBig"}
+	},
+		"radium": {
+			"speed": 23,
+			"damage": 40,
+			"lifetime": 24,
+			"width": 10,
+			"height": 10,
+			"ammoMultiplier": 1.25,
+			"status": "radiation",
+			"backColor": "A2BDEEFF",
+			"frontColor": "BCB3F5FF",
+			"shootEffect": "shootSmall",
+			"fragBullets": 3,
+			"fragRandomSpread": 40,
+			"fragSpread": 120,
+			"fragBullet": {
+				"type": "BasicBulletType",
+				"trailEffect": "none",
+				"damage": 18,
+				"speed": 4,
+				"pierce": true,
+				"pierceBuilding": false,
+				"pierceCap": 7,
+				"lifetime": 15,
+				"width": 8,
+				"height": 8,
+				"status": "radiation",
+				"backColor": "A2BDEEFF",
+				"frontColor": "BCB3F5FF",
+				"hitEffect": "flakExplosionBig",
+				"despawnEffect": "flakExplosionBig"}
+		},
+			"iron": {
+			"speed": 16.5,
+			"damage": 36,
+			"lifetime": 24,
+			"width": 10,
+			"height": 10,
+			"ammoMultiplier": 1.25,
+			"shootEffect": "shootSmall",
+                         "fragBullets": 4,
+		        "fragRandomSpread": 40,
+			"fragSpread": 20,
+				"fragBullet": {
+					"type": "BasicBulletType",
+					"trailEffect": "none",
+					"damage": 18,
+					"speed": 4,
+					"pierce": true,
+					"pierceBuilding": true,
+					"pierceCap": 5,
+					"lifetime": 15,
+					"width": 8,
+					"height": 8,
+					"hitEffect": "flakExplosionBig",
+					"despawnEffect": "flakExplosionBig"}
+	}
+},
+	"researchCostMultiplier": 0.75,
+	"requirements": [
+		{
+			"item": "aluminumAlloy",
+			"amount": 435
+		},
+		{
+			"item": "lead",
+			"amount": 535
+		},
+		{
+			"item": "zinc",
+			"amount": 245
+		}
+	],
+	"category": "turret",
+	"research": "fury"
+}

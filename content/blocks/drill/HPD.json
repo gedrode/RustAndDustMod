@@ -1,0 +1,45 @@
+{
+  "name": "高压钻机",
+  "type": "Drill",
+  "description": "利用高压电力驱动钻头进行钻探",
+  "size": 3,
+  "health": 840,
+  "tier": 5,
+  "drillTime": 120,
+  "liquidBoostIntensity": 2,
+  "canOverdrive": true,
+  "warmupSpeed": 0.02,
+  "drillEffect": "none",
+  "updateEffect": "none",
+  "idleSound": "DrillBit",
+  "idleSoundVolume": 0.1,
+  "rotateSpeed": 2,
+  "drawMineItem": true,
+  "consumes": {
+    "power": 4,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.3,
+      "booster": true,
+      "optional": true
+    }
+  },
+  "itemCapacity": 40,
+  "liquidCapacity": 20,
+  "requirements": [
+    {
+      "item": "aluminumAlloy",
+      "amount": 45
+    },
+    {
+      "item": "zinc",
+      "amount": 35
+    },
+    {
+      "item": "graphite",
+      "amount": 45
+    }
+  ],
+  "category": "production",
+  "research": "SD"
+}

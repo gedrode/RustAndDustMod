@@ -1,0 +1,13 @@
+{
+  "type": "StackConveyor",
+  "name": "钢轨",
+  "health": 110,
+  "insulated":true,
+  "requirements": [
+    "steel/2"
+  ],
+  "category": "distribution",
+  "research":"AC",
+  "speed": 0.2,
+  "itemCapacity":30
+}

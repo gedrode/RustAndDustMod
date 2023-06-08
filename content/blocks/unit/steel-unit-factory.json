@@ -1,0 +1,30 @@
+{
+	"type": "UnitFactory",
+	"name": "白钢单位工厂",
+	"description": "研究并生产以钢为主要材料的单位。输出单位可以直接投入战场或再次升级",
+    "health":820,
+	"size":3,
+	"buildCostMultiplier": 0.4,
+	"consumes":{"power":4	},
+	"plans":[
+	{ "unit": "T1",
+	"time": 1800, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 60},
+{ "item": "graphite", "amount": 30},
+{ "item": "steel", "amount": 45}
+	]	},	
+	{ "unit": "A1",
+	"time":1400, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 45 },
+{ "item": "steel", "amount": 20 }
+]	}
+],
+	"requirements": [
+    { "item": "steel", "amount": 800},
+	{ "item": "silicon", "amount": 360},
+    { "item": "primary-processor", "amount": 30}	],
+	"category":"units",
+	"research":"Greelian"
+}

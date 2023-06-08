@@ -1,0 +1,28 @@
+{
+	"name":"锌电池",
+	"health":2900,
+	"description": "利用锌对电的特性制造的电池，比一般大型电池储电量更大更耐造",
+	"requirements": [
+		"lead/50","zinc/15",
+		"copper/95"
+	],
+	"drawer":{
+		"type":"DrawMulti",
+		"drawers":[
+			"DrawDefault",
+			{"type":"DrawPower",
+			"emptyLightColor":"ffffff",
+			"fullLightColor":"DEC26DFF"},
+			{"type":"DrawRegion",
+			"suffix":"-top"}
+			]
+	},
+	"consumes": 
+	{"powerBuffered": 100000},
+	"emptyLightColor":"ffffff",
+	"fullLightColor":"DEC26DFF",
+	"size": 3,
+	"type": "Battery",
+	"category": "power",
+	"research": "IN"
+}

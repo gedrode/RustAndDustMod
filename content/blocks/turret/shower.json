@@ -1,0 +1,83 @@
+{
+	"type": "ItemTurret",
+	"name": "阵雨",
+	"description": "双管高射炮，对空中敌军可造成密集火力压制",
+	"health": 750,
+	"range":200,
+	"targetGround":false,
+	"size": 2,
+	"reload": 20,
+	"ammoPerShot": 2,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+			"shoot": {
+			"shots": 5,
+			"shotDelay": 2,
+			"type": "ShootAlternate",
+			"barrels": 2,
+			"spread": 4
+		},
+	"inaccuracy": 0.2,
+	"xRand": 2,
+	"ammoUseEffect": "casing2Double",
+	"rotateSpeed": 12,
+	"shake": 1,
+	"shootSound": "ALDAS",
+	"ammoTypes": {
+		"aluminum": {
+			"type": "FlakBulletType",
+			"speed": 10,
+			"sprite": "rad-cross",
+			"damage": 18,
+			"lifetime": 24,
+			"width": 10,
+			"height": 10,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall",
+				"fragBullets": 4,
+				"fragRandomSpread": 0,
+			    "fragSpread": 90,
+				"fragBullet": {
+					"type": "FlakBulletType",
+					"trailEffect": "none",
+					"despawnEffect": "none",
+					"damage": 10,
+					"speed": 10,
+					"pierce": true,
+					"pierceBuilding": false,
+					"pierceCap": 7,
+					"lifetime": 15,
+					"width": 8,
+					"height": 8,
+					"hitEffect": "flakExplosionBig",
+					"despawnEffect": "flakExplosionBig"
+				}
+		},
+			"copper": {
+			"type": "FlakBulletType",
+			"speed": 10,
+			"damage": 24,
+			"lifetime": 24,
+			"width": 10,
+			"height": 10,
+			"ammoMultiplier": 1.25,
+			"shootEffect": "shootSmall",}
+	},
+	"researchCostMultiplier": 0.75,
+	"requirements": [
+		{
+			"item": "steel",
+			"amount": 35
+		},
+		{
+			"item": "copper",
+			"amount": 45
+		}
+	],
+	"category": "turret",
+	"research": "temporary"
+}

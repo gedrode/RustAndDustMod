@@ -1,0 +1,12 @@
+{
+	"name": "大型铁墙",
+	"description": "大型铁质城墙，更为可靠",
+	"type": "Wall",
+	"health": 1760,
+	"size": 2,
+	"requirements": [
+	{"item": "iron", "amount": 18 }
+	],
+	"category": "defense",
+	"research": "IW"
+}

@@ -1,0 +1,103 @@
+{
+    "type": "NuclearReactor",
+    "name": "小型钍反应堆",
+    "description": "材料改良的产物，在原钍反应堆的基础上缩小了尺寸，冷却方面只需要足够的水即可，但代价是对比原版略少的发电量",
+    "size": 2,
+    "health": 900,
+    "liquidCapacity": 60,
+  "buildCostMultiplier": 0.6,
+    "itemCapacity": 10,
+    "hasItems": true,
+    "hasLiquids": true,
+    "outputsPower": true,
+    "powerProduction": 10,
+    "itemDuration": 300,
+    "heating":0.04,
+    "lightColor": "FFFFFF",
+    "explosionShake":3,
+    "explosionShakeDuration":6,
+    "explosionRadius": 10,
+    "explosionDamage":700,
+    "explodeSound":"bang",
+    "explodeEffect": {
+    "type": "MultiEffect",
+	"effects": [
+	{
+            "type": "WaveEffect",
+            "lifetime": 40,
+            "sizeFrom": 0,
+            "sizeTo": 320,
+            "strokeFrom": 12,
+            "strokeTo": 0,
+            "colorFrom": "EEC591",
+            "colorTo": "ffffffff"
+        },
+    {"type": "ParticleEffect",
+    "particles": 26,
+    "interp": "fastSlow",
+    "sizeFrom": 40,
+    "sizeTo": 0,
+    "length": 350,
+    "baseLength": 0,
+    "lifetime": 750,
+    "colorFrom": "DEDEDEAA",
+    "colorTo": "ffffff00",
+    "cone": 360
+        },
+{"type": "ParticleEffect",
+    "particles": 35,
+    "interp": "fastSlow",
+    "sizeFrom": 30,
+    "sizeTo": 0,
+    "length": 180,
+    "baseLength": 0,
+    "lifetime": 700,
+    "colorFrom": "DEDEDEAA",
+    "colorTo": "ffffff00",
+    "cone": 360
+        },
+{
+        "type": "ParticleEffect",
+        "particles": 25,
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "lenFrom": 90,
+        "lenTo": 0,
+        "length": 320,
+        "baseLength": 0,
+        "lifetime": 30,
+        "colorFrom": "DEDEDE",
+        "colorTo": "DEDEDE",
+        "cone": 360
+            }
+        ]    },
+    "fuelItem":"thorium",
+    "consumes": {
+    "liquid": {
+    "liquid": "water",
+    "amount": 0.5
+        },
+    "items":["thorium/1"]
+    },
+    "requirements": [
+        {
+            "item": "lead",
+            "amount": 100
+        },
+        {
+            "item": "aluminum",
+            "amount": 185
+        },
+        {
+            "item": "metaglass",
+            "amount": 60
+        },
+        {
+            "item": "thorium",
+            "amount": 80
+        }
+    ],
+    "category": "power",
+    "research": "IN"
+}

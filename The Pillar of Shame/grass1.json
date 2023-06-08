@@ -1,0 +1,63 @@
+{
+	"type": "tank",
+	"template":"tankUnitType",
+	"squareShape":true,
+	"omniMovement":false,
+	"rotateMoveFirst":true,
+	"rotateSpeed":3,
+	"speed": 1.8,
+	"hitSize": 9.5,
+	"ammoCapacity": 300,
+	"health": 2450,
+	"armor": 3,
+	"drag": 0.08,  "accel":0.05,
+	"itemCapacity": 5,
+	"treadPullOffset":3,
+	"abilities": [
+		{
+			"type": "ForceFieldAbility",
+			"radius": 80.0,
+			"sides":4,
+			"regen": 10,
+			"max": 800.0,
+			"cooldown": 400.0
+		},
+	{
+		"type": "ArmorPlateAbility",
+		"healthMultiplier": 1
+	}
+		],
+	"treadRects": [
+		{"x": 4,
+			"y": 2.75,
+			"width": 2,
+			"height": 4.5
+		},
+		{"x": 4,
+			"y": -4.5,
+			"width": 2,
+			"height": 4.5
+		}
+	],
+	"faceTarget": false,
+	"weapons":[
+		{	"name": "g1-weapon",
+			"reload": 25,
+			"recoil":0,
+			"x": 0,  "y": 0,
+			"rotate": true,
+			"rotateSpeed":15,
+			"mirror":false,
+			"inaccuracy": 0.5,
+			"ejectEffect":"casing1",
+			"shootSound": "ZJ",
+			"alternate": false,
+			"bullet":{
+				"damage":80,
+				"speed":10,
+				"lifetime":18,
+				"width":2,	 "height":15
+			}
+		}
+	]
+}

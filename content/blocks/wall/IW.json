@@ -1,0 +1,12 @@
+{
+	"name": "铁墙",
+	"description": "挺好的，比铜墙好",
+	"type": "Wall",
+	"health": 410,
+	"size": 1,
+	"requirements": [
+	{"item": "iron", "amount": 4 }
+	],
+	"category": "defense",
+	"research": "Greelian"
+}

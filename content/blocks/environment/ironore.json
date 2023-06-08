@@ -1,0 +1,11 @@
+{
+"name":"ironore",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"iron",
+"mapColor":"DEDEDEFF",
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":0.9,
+"oreScale":35
+}

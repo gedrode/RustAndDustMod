@@ -1,0 +1,12 @@
+{
+	"type": "floor",
+	"name": "deepacidwater",
+	"liquidDrop": "acidLiquor",
+	"status": "acid",
+	"cacheLayer":"water",
+	"speedMultiplier": 0.95,
+	"isLiquid":"true",
+	"drownTime": 10,
+	"variants":1,
+	"playerUnmineable": true
+}

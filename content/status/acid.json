@@ -1,0 +1,23 @@
+{
+"name":"酸蚀",
+	"description": "spitter！！！",
+    "damage": 0.1,
+	"damageMultiplier":0,
+	"healthMultiplier":0.95,
+	"speedMultiplier":0.9,
+	"reloadMultiplier":0.9,
+	"effectChance":0.5,
+	"effect":{	"type": "ParticleEffect",
+    "particles": 1,  
+    "baseLength": 0,
+    "length":16,
+    "lifetime": 10,
+    "line": true,
+    "lenFrom": 10,
+    "lenTo":10,
+    "strokeFrom": 1,
+    "strokeTo": 0,
+    "colorFrom": "BD445DFF",
+    "colorTo": "BD445DFF",
+    "cone":360 }
+}

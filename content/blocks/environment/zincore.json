@@ -1,0 +1,11 @@
+{
+"name":"zincore",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"zinc",
+"mapColor":"DEDEDEFF",
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":0.9,
+"oreScale":30
+}

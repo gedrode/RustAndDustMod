@@ -1,0 +1,34 @@
+{
+	"type": "GenericCrafter",
+	"name": "铝钢高炉",
+	"outputItem": { "item": "aluminumAlloy", "amount": 1},
+	"size": 2,
+	"hasPower": true,
+	"buildCostMultiplier": 0.35,
+		"researchCostMultiplier": 0.35,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 40,
+	"itemCapacity": 20,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault"
+            ]
+    },
+	"consumes": {
+    "power":2,
+    "items": {
+	 "items": [
+	    { "item": "aluminum", "amount": 2 },
+		 { "item": "iron", "amount": 1 }  ]
+  }
+ },
+"requirements": [
+		{"item": "aluminum", "amount": 200},
+		{ "item": "graphite", "amount": 100 },
+		{"item": "iron","amount":100 }
+	],
+	"category": "crafting",
+	"research": "furnace"
+}

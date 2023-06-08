@@ -1,0 +1,67 @@
+{
+	"type": "tank",
+	"template":"tankUnitType",
+	"squareShape":true,
+	"omniMovement":false,
+	"rotateMoveFirst":true,
+	"rotateSpeed":3,
+	"speed": 2.8,
+	"hitSize": 11.5,
+	"ammoCapacity": 300,
+	"health": 750,
+	"armor": 3,
+	"drag": 0.08,  "accel":0.05,
+	"itemCapacity": 5,
+	"treadPullOffset":3,
+	"treadRects": [
+		{"x": 4,
+			"y": 2.75,
+			"width": 2,
+			"height": 4.5
+		},
+		{"x": 4,
+			"y": -4.5,
+			"width": 2,
+			"height": 4.5
+		}
+	],
+	"faceTarget": false,
+	"research": "T1",
+	"abilities": [
+		{ "type": "StatusFieldAbility",
+			"duration": 240,
+			"reload": 360,
+			"range": 30,
+			"applyEffect":"none",
+			"activeEffect":{"type": "WaveEffect",
+				"lifetime": 10,
+				"sizeFrom":8,
+				"sizeTo": 40,
+				"strokeFrom": 2,
+				"strokeTo": 0,
+				"colorFrom": "ffffff",
+				"colorTo": "BD445DFF"},
+			"effect":"DBO"  }	  ],
+	"weapons":[
+		{	"name": "T2-weapon",
+			"reload": 20,
+			"recoil":1,
+			"xRand":4,
+			"x": 0,  "y": 0,
+			"rotate": true,
+			"rotateSpeed":15,
+			"mirror":false,
+			"inaccuracy": 0,
+			"ejectEffect":"casing1",
+			"shootSound": "blaster",
+			"alternate": false,
+			"bullet":{
+				"type": "laserBulletType",
+				"damage":30,
+				"speed":0,
+				"lifetime":15,
+				"width":6,	 "height":20
+			}
+		}
+	]
+}

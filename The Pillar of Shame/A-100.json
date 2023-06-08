@@ -1,0 +1,76 @@
+{
+	"type": "flying",
+	"speed": 5.8,
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":3.55,
+	"ammoCapacity": 300,
+	"hitSize":48,
+	"flying": true,
+	"targetAir": false,
+	"circleTarget": true,
+	"faceTarget": true,
+	"health": 5340,
+	"armor":2,
+	"engineOffset": 6,
+	"engineSize": 2,
+	"parts": [
+			{
+			 "type": "hoverPart",
+			 "color": "66B1FFFF",
+			 "layerOffset": -1,
+			 "x": 6,
+			 "phase": 90,
+			 "stroke": 2,
+			 "radius": 6,
+			 "mirror": true,
+			 "y": -4
+			 },
+			 {
+			 "type": "hoverPart",
+			 "color": "66B1FFFF",
+			 "layerOffset": -1,
+			 "x": 20,
+			 "phase": 45,
+			 "stroke": 2,
+			 "radius": 6,
+			 "mirror": true,
+			 "y": 4
+			 }
+			],
+	"weapons":[ {"name":"A100-weapon",
+	"x":0,"y":0,
+		"mirror": false,
+	"reload":400,
+	"top":false,
+	"rotate": true,
+		"rotateSpeed":5.55,
+	"shootSound":"ALDA",
+		"shoot": {
+			"shots": 70,
+			"shotDelay": 1,
+			"type": "ShootAlternate",
+			"barrels": 2,
+			"spread": 4
+		},
+		"inaccuracy": 2.5,
+	"bullet":{
+		"status":"radiation",
+		"pierceArmor": true,
+    "shrinkY":0,
+    "frontColor":"FFFFFF",
+    "backColor":"c0ecff",
+		"shootEffect":"shootBig",
+		"smokeEffect":"shootBigSmoke",
+		"hitEffect":"flakExplosionBig",
+		"despawnEffect":"flakExplosionBig",
+		"splashDamage":60,
+		"unitDamageMultiplier":2.5,
+		"splashDamageRadius":30,
+	"damage": 80,
+	"width": 2,
+	"height": 18,
+	"speed": 18,
+	"lifetime":25
+	} 	}
+	    ]
+}
