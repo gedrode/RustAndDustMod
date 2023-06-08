@@ -1,0 +1,63 @@
+{
+"type": "missile",
+"template": "MissileUnitType",
+"name":"野蜂导弹"
+"speed":10
+"outlineColor":"2d2f39"
+"engineColor":"ffffff"
+"engineSize":3
+"engineLayer":100
+"engineOffset":10
+"trailColor":"feb380"
+"rotateSpeed":2.5
+"trailLength":10
+"missileAccelTime":10
+"lowAltitude":false
+"fogRadius":6
+"envDisabled":0
+"health":800
+"weapons":[
+	{
+	"shootCone":360
+	"targetGround":true
+	"reload":1
+	"mirror":false
+	"deathExplosionEffect":"massiveExplosion"
+	"shootOnDeath":true
+	"shake":10
+	"bullet":{
+		"type":"ExplosionBulletType"
+		"collidesGround":true
+		"splashDamage":60
+		"splashDamageRadius":60
+		"hitColor":"feb380"
+		"shootEffect":{
+			"type":"MultiEffect"
+			"effects":[
+			      "massiveExplosion"
+			      "scatheExplosion"
+			      "scatheLight"
+			{
+				"type":"WaveEffect"
+				"lifetime":10
+				"strokeFrom":4
+				"sizeTo":10
+			}
+		]
+		}
+		}
+	}]
+	"abilities":[
+		{
+			"type": "ShieldArcAbility",
+			"radius": 10,
+			"angle": 200,
+			"width": 10,
+			"max": 800,
+			"regen": 7.5,
+			"cooldown": 360,
+			"angleOffset": 0,
+			"whenShooting":"false"
+		}]
+}
+	
