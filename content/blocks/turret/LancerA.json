@@ -1,0 +1,66 @@
+{
+	"targetAir": false,
+	"targetGround": true,
+	"health": 1300,
+	"size": 3,
+	"shootSound":"bolt",
+	"shake":2,
+	"inaccuracy": 0,
+	"recoil": 2,
+	"recoilTime":10,
+	"shootType": {
+		"type": "laserBulletType",
+				"damage":36,
+				"speed":0,
+				"lifetime":15,
+				"width":6,	 "height":220,
+				"colors":["A2BDEEFF", "BCB3F5FF", "FFFFFF"],
+	"hitEffect": {
+"type": "MultiEffect",
+	"effects": [
+	{"type": "ParticleEffect",
+    "particles": 16,
+    "sizeFrom": 6,
+    "sizeTo": 0,
+    "length": 35,
+    "baseLength": 10,
+    "lifetime": 25,
+    "colorFrom": "FF8C0080",
+    "colorTo": "FF8C0080",
+    "cone": 360},
+    {"type": "WaveEffect",
+    "lifetime": 15,
+    "sizeFrom": 1,
+    "sizeTo": 30,
+    "strokeFrom": 3,
+    "strokeTo": 0,
+    "colorFrom": "FF8C00",
+    "colorTo": "FF8C0000"}]
+	},
+	"despawnEffect":"none",
+	"shootEffect": {     
+        "type": "WaveEffect",
+        "lifetime": 16,
+        "sizeFrom": 0,
+        "sizeTo": 32,
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFF",
+        "colorTo": "FFD700"
+	   }
+	},
+	   "consumes": {
+		"power":8,
+	"coolant":{"amount":0.2,"optional":true}  
+		},
+	"reload": 35,
+	"rotateSpeed": 6,
+	"range": 200,
+	"category": "turret",
+	"research": "temporary",
+	"requirements": [
+	{ "item": "lead", "amount":90},
+	{ "item": "steel", "amount":45},
+	{ "item": "silicon", "amount": 85}
+	]
+}

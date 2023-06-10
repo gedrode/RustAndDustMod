@@ -1,0 +1,109 @@
+{
+	"type": "ItemTurret",
+	"health": 1250,
+	"size": 4,
+	"reload": 100,
+	"range": 160,
+	"maxAmmo": 48,
+	"recoilTime": 30,
+	"recoil": 3,
+	"shootWarmupSpeed": 0.1,
+	"minWarmup": 0.88,
+	"consumes": {
+		"coolant": {
+			"amount": 0.3,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"type": "ShootMulti",
+		"source": {},
+		"dest": [
+	{
+		"shots":3,
+	"shotDelay":4.5
+	},
+	{
+		"shots":4,
+	"shotDelay":4.5,
+	"firstShotDelay":35
+	},
+	{"type":"ShootSpread",
+	"firstShotDelay":60,
+	"shots":8,
+	"spread": 2.5
+	}
+		]
+	},
+	"ammoPerShot": 6,
+	"shootSound": "shotgun",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 3,
+	"shootCone": 20,
+	"rotateSpeed": 9,
+	"ammoTypes": {
+		"titanium": {
+			"type": "ShrapnelBulletType",
+			"reloadMultiplier": 1.2,
+			"width": 20,
+			"length": 170,
+			"damage": 150,
+			"ammoMultiplier": 2,
+			"pierce": true
+		},
+		"thorium": {
+			"type": "ShrapnelBulletType",
+			"reloadMultiplier": 1,
+			"rangeChange":10,
+			"length": 200,
+			"damage": 150,
+			"width": 20,
+			"fromColor": "FF69B4",
+			"toColor": "FF69B4",
+			"ammoMultiplier": 4,
+			"pierce": true,
+			"shootEffect": "thoriumShoot"
+		},
+		"radium": {
+			"type": "ShrapnelBulletType",
+			"reloadMultiplier": 1,
+			"rangeChange":40,
+			"length": 230,
+			"damage": 180,
+			"width": 20,
+			"fromColor": "BCB3F5FF",
+			"toColor": "A2BDEEFF",
+			"ammoMultiplier": 6,
+			"pierce": true,
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 9,
+				"line": true,
+				"length": 55,
+				"baseLength": 0,
+				"lifetime": 15,
+				"colorFrom": "dedede",
+				"colorTo": "aaaaaa",
+				"cone": 60
+			}
+		}
+	},
+	"requirements": [
+		{
+			"item": "graphite",
+			"amount": 150
+		},
+		{
+			"item": "lead",
+			"amount": 170
+		},
+		{
+			"item": "thorium",
+			"amount": 130
+		}
+	],
+	"category": "turret",
+	"research": "Lancer-II"
+}
