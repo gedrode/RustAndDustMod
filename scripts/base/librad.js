@@ -35,8 +35,18 @@ exports.addToResearch = (content, research) => {
 	node.parent = parent;
 };
 
+exports.bundle = (text, num, num1) => {
+	if (num1) {
+		return Core.bundle.format(text, num, num1);
+	} else if (num) {
+		return Core.bundle.format(text, num);
+	} else {
+		return Core.bundle.get(text);
+	}
+}
+
 exports.limitBuild = (block, num) => {
-	return block.localizedName + Core.bundle.format("text-limitBuild", num);
+	return block.localizedName + exports.bundle("text-limitBuild", num);
 }
 
 exports.SpeedUpTurret = (type, name, min/*最快攻速*/, change/*每次快多少攻速(默认1帧)*/, limit/*建筑数量限制(不写就是无限制)*/) => {
@@ -45,7 +55,7 @@ exports.SpeedUpTurret = (type, name, min/*最快攻速*/, change/*每次快多�
 		setBars() {
 			this.super$setBars();
 			this.addBar("fastReload", func(e => new Bar(
-			prov(() => Core.bundle.format("bar.fastReload", Strings.fixed(e.getTime() * 100, 0))),
+			prov(() => exports.bundle("bar.fastReload", Strings.fixed(e.getTime() * 100, 0))),
 			prov(() => Color.valueOf("FF5845")),
 			floatp(() => e.getTime()))));
 		},
@@ -92,7 +102,7 @@ exports.DamageUpTurret = (type, build, name, max/*最高层数*/, add/*每帧增
 		setBars() {
 			this.super$setBars();
 			this.addBar("damageIncrease", func(e => new Bar(
-			prov(() => Core.bundle.format("bar.damageIncrease", e.getCharmage())),
+			prov(() => exports.bundle("bar.damageIncrease", e.getCharmage())),
 			prov(() => Color.valueOf("BE1C2A")),
 			floatp(() => e.setBar()))));
 		},
