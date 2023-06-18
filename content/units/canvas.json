@@ -1,0 +1,63 @@
+{
+	"type":"tether",
+	"name": "画布",
+	"speed": 1.15, 
+	"drag":0.06,"accel":0.09,
+	"rotateSpeed":2.5,
+	"immunities":["electrified","unmoving"],
+	"hitSize":14,
+	"buildBeamOffset":11,
+	"buildSpeed": 0.5,
+	"flying": true,
+	"faceTarget": false,
+	"useUnitCap": true,
+	"health": 270,
+	"engineOffset":16,
+	"engineSize":2.6,
+	"engines": [
+		{	"x": -9,"y":-7.5,
+		"radius": 2.2, "rotation": -135},
+		{	"x": 9,"y": -7.5,
+		"radius": 2.2, "rotation": -45}
+	],
+	"isEnemy":false,
+	"hidden":true,
+	"createWreck":false,
+	"allowedInPayloads":false,
+	"logicControllable":false,
+	"defaultController": "AssemblerAI",
+	"playerControllable":false,
+	"parts": [
+		{
+		"type": "HoverPart",
+		"stroke": 1.5,
+		"strokeTo":1.5,
+		"color": "97FFA866",
+		"radius": 65,
+		"radiusTo": 65,
+		"layer": 110
+		},
+	{
+		"type": "HoverPart",
+		"stroke": 0,
+		"strokeTo":2,
+		"color": "97FFA800",
+		"colorTo": "97FFA8",
+		"radius": 0,
+		"radiusTo": 65,
+		"layer": 110
+		}
+	],
+	"weapons":[
+		{"name":"canvasw",
+		"type":"RepairBeamWeapon",
+		"x":0,"y":1.75,
+		"rotateSpeed": 3.2,
+		"shootY":6,
+		"beamWidth":0.6,
+		"mirror":false,
+		"repairSpeed":0.6,
+		"bullet":{
+		"maxRange":66}}
+	]
+}
