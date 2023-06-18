@@ -1,0 +1,13 @@
+{
+	"name": "丁烷",
+	"description": "易燃气体",
+	"alwaysUnlocked":false,
+	"color": "333333",
+        "gas":true,
+	"flammability": 2.5,
+	"temperature": 0.5,
+	"heatCapacity": 0,
+	"viscosity": 0.8,
+	"explosiveness": 1.2,
+	"research": "Greelian"
+}
