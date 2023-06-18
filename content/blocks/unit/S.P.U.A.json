@@ -1,0 +1,46 @@
+{
+	"type": "UnitAssembler",
+	"name": "特种单位组装厂",
+	"description": "使用组装技术进行特种单位的建造",
+	"health": 6800,
+	"size": 6,
+	"liquidCapacity": 120,
+	"consumes": {
+		"power": 10,
+		"liquid": {
+			"liquid": "water",
+			"amount": 1
+		}
+	},
+	"areaSize": 10,
+	"plans": [
+		{
+			"unit": "TC",
+			"time": 1000,
+			"requirements": [
+				"rad-JF/1",
+				"rad-LSW/8",
+				"rad-IM/2"
+			]
+		}
+	],
+	"droneType": "canvas",
+	"requirements": [
+		"zinc/800",
+		"silicon/1000",
+		"titanium/500",
+		"steel/600",
+		"aluminum/1200"
+	],
+	"category": "units",
+	"canOverdrive": false,
+	"research": {
+		"parent": "steel-unit-factory",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "弱效疫苗"
+			}
+		]
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"type": "ContinuousLiquidTurret",
+	"health": 800,
+	"size": 2,
+	"reload":0.6,
+	"range":240,
+	"recoilTime":10,
+	"recoil": 1,
+	"targetGround":true,
+	"targetAir":true,
+	"inaccuracy": 1,
+	"rotateSpeed": 9,
+	"velocityRnd": 0.1,
+	"liquidCapacity": 300,
+    "drawer":{
+		"type":"DrawTurret",
+		"parts":[
+            {
+				"type": "RegionPart",
+				"mirror": true,
+				"suffix": "-1",
+				"under":true,
+				"moveX":0,
+				"moveRot": -10,
+				"progress": "warmup",
+				"heatProgress": "recoil",
+				"heatColor": "FF7055"},
+                {
+                    "type": "RegionPart",
+                    "mirror": true,
+                    "suffix": "-2",
+                    "under":true,
+                    "moveX":2,
+                    "moveRot": -8,
+                    "progress": "warmup",
+                    "heatProgress": "recoil",
+                    "heatColor": "FF7055"},
+			{
+				"type": "RegionPart",
+				"mirror": false,
+				"x": 0,
+				"y": 0,
+				"suffix": "-bottle",
+				"under": true,
+				"moveX": 0,
+				"moveY": 1.5,
+				"heatColor": "FF7055FF"
+			}
+],
+	"ammoTypes": {
+    "butane":{
+    "type": "ContinuousFlameBulletType",
+    "lifetime":15,
+    "speed":0, 
+    "length":180,
+    "weight":10,
+    "knockback":0.6,
+ 	"status":"melting",
+ 	"statusDuration":600,
+	"damage": 1.5
+    }
+},
+	"requirements": [
+	{ "item": "iron", "amount": 70},
+	{ "item": "copper", "amount": 100 },
+	{ "item": "graphite", "amount": 80 }
+	],
+	"category": "turret",
+	"research": "temporary"
+	}
+}

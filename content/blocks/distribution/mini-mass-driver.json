@@ -1,0 +1,20 @@
+{
+	"name": "超小型质量驱动器",
+	"description": "打包发送物品，极小的占地面积，但打包量也极为微小",
+	"type": "MassDriver",
+	"size": 1,
+	"hasItems": true,
+	"itemCapacity": 30,
+	"reload": 60,
+	"range": 200,
+	"consumes": {
+		"power": 1
+	},
+	"requirements": [
+		"copper/150",
+		"aluminum/120",
+		"lead/85"
+	],
+	"research": "ACB",
+	"category": "distribution"
+}

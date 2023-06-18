@@ -2,9 +2,9 @@
 	"type": "ItemTurret",
 	"health": 1250,
 	"size": 4,
-	"reload": 100,
+	"reload": 210,
 	"range": 160,
-	"maxAmmo": 48,
+	"maxAmmo": 60,
 	"recoilTime": 30,
 	"recoil": 3,
 	"shootWarmupSpeed": 0.1,
@@ -21,15 +21,20 @@
 		"dest": [
 	{
 		"shots":3,
-	"shotDelay":4.5
+	"shotDelay":5
 	},
 	{
 		"shots":4,
-	"shotDelay":4.5,
-	"firstShotDelay":35
+	"shotDelay":5,
+	"firstShotDelay":40
+	},
+	{
+		"shots":5,
+	"shotDelay":5,
+	"firstShotDelay":90
 	},
 	{"type":"ShootSpread",
-	"firstShotDelay":60,
+	"firstShotDelay":160,
 	"shots":8,
 	"spread": 2.5
 	}
@@ -77,6 +82,7 @@
 			"toColor": "A2BDEEFF",
 			"ammoMultiplier": 6,
 			"pierce": true,
+			"status":"radiation",
 			"shootEffect": {
 				"type": "ParticleEffect",
 				"particles": 9,

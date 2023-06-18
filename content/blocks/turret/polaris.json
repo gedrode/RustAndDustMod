@@ -8,6 +8,7 @@
 	"recoil": 3,
 	"cooldownTime": 180,
 	"shake": 8,
+	"unitSort": "strongest",
 	"consumes": {
 		"power": 12.5,
 		"coolant": {

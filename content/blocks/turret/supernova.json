@@ -1,0 +1,158 @@
+{
+	"health": 16000,
+	"armor": 20,
+	"size": 7,
+	"reload": 160,
+	"range": 800,
+	"recoilTime": 100,
+	"recoil": 3,
+	"cooldownTime": 160,
+	"shake": 8,
+	"shootSound":"spnovas",
+	"unitSort": "strongest",
+	"consumes": {
+		"power": 12.5,
+		"coolant": {
+			"amount": 2,
+			"optional": true
+		}
+	},
+	"minWarmup": 0.9,
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"rotateSpeed": 2.3,
+	"maxAmmo": 36,
+	"ammoPerShot": 36,
+	"ammoTypes": {
+		"thermite": {
+			"type": "BasicBulletType",
+			"sprites":"rad-spnova",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0,
+					"length":65,
+					"lifetime": 60,
+					"spin":1,
+					"region":"rad-bigstar",
+					"sizeFrom": 0,
+					"sizeTo": 30,
+					"colorFrom": "e16652",
+					"colorTo": "ffffff",
+					"cone":360 },
+					{
+						"type": "WaveEffect",
+						"lifetime": 25,
+						"sizeFrom": 1,
+						"sizeTo": 108,
+						"strokeFrom": 6,
+						"strokeTo": 0,
+						"colorFrom": "e16652",
+						"colorTo": "ffffff"
+					}
+				]
+			},
+			"smokeEffect": "smokeCloud",
+			"trailLength":8,
+			"trailWidth":4,
+			"trailColor":"e16652",
+			"trailRotation": true, 
+			"trailChance":1,
+			"trailInterval":33,
+			"trailEffect": {
+				"type":"MultiEffect",
+				"effects":[
+				{"type": "ParticleEffect",
+				"particles": 1,
+				"length": 0,
+				"lifetime": 20,
+				"region": "rad-spnova",
+				"lightColor": "e16652",
+				"colorFrom": "e16652",
+				"colorTo": "ffffff",
+				"sizeFrom": 20,
+				"sizeTo": 0
+				},
+				{
+					"type": "WaveEffect",
+					"startDelay":5,
+					"lifetime": 20,
+					"sizeFrom": 25,
+					"sizeTo": 0,
+					"interp":"circleOut",
+					"strokeFrom": 6,
+					"strokeTo": 0,
+					"colorFrom": "ffffff",
+					"colorTo": "EEC591"
+				}
+			]
+		},
+			"despawnEffect": {
+				"type":"MultiEffect",
+				"effects":[
+					{"type": "ParticleEffect",
+					"particles": 7,
+					"sizeFrom": 16,
+					"sizeTo": 0,
+					"interp": "pow10Out",
+					"sizeInterp": "pow5In",
+					"length": 85,
+					"baseLength": 3,
+					"layer":99,
+					"lifetime": 120,
+					"colorFrom": "737373",
+					"colorTo": "73737380",
+					"cone": 30},
+					{"type": "ParticleEffect",
+					"particles": 14,
+					"sizeFrom": 9,
+					"sizeTo": 0,
+					"interp": "pow10Out",
+					"sizeInterp": "pow5In",
+					"length": 85,
+					"baseLength": 3,
+					"layer":99,
+					"lifetime": 120,
+					"colorFrom": "737373",
+					"colorTo": "73737380",
+					"cone": 30},
+						{"type": "WaveEffect",
+						"lifetime": 22,
+						"sizeFrom": 0,
+						"sizeTo": 80,
+						"strokeFrom": 30,
+						"strokeTo": 10,
+						"colorFrom": "FFFFFF70",
+						"colorTo": "FFFFFF00"}
+				]
+			},
+			"trailSpacing": 8,
+			"damage": 750,
+			"status":"scabbing",
+			"hitSound":"armorBraken",
+			"pierceArmor":true,
+			"lightningDamage":125,
+	        "lightning":2,
+	        "lightningLength":15,
+			"hitShake": 6,
+			"ammoMultiplier": 1,
+			"speed": 85,
+			"lifetime": 10,
+			"shootEffect": "bigShockwave",
+			"buildingDamageMultiplier": 1.3
+		}
+	},
+	"requirements": [
+		"steel/5500",
+		"silicon/1880",
+		"zinc/1500",
+		"radium/930",
+		"primary-processor/130",
+		"aluminumAlloy/1850"
+	],
+	"category": "turret",
+	"research": "polaris"
+}

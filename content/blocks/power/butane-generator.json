@@ -1,0 +1,27 @@
+{
+	"type": "ThermalGenerator",
+	"name": "丁烷反应站",
+	"description": "架设于丁烷气泉上，利用丁烷燃烧发电，丁烷仍会有富余可供其它建筑利用",
+	"size": 3,
+	"health": 660,
+	"powerProduction": 4,
+	"generateEffect":"turbinegenerate",
+	"effectChance":0.08,
+	"drawer":{
+		"type":"DrawMulti",
+		"drawers":[
+			"DrawDefault",
+			{"type":"DrawBlurSpin",
+			"suffix":"-rotator"}
+			]
+	},
+	"requirements": [
+	"copper/160","aluminum/200","graphite/140"
+	],
+	"floating": true,
+	"ambientSound":"hum",
+	"attribute": "steam",
+	"outputLiquid": "butane/3",
+	"category": "power",
+	"research": "Greelian"
+}

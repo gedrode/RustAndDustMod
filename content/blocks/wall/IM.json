@@ -1,0 +1,12 @@
+{
+	"name": "整合模组",
+	"type": "Wall",
+	"health":800,
+	"size":2,
+	"buildCostMultiplier":0.8,
+	"requirements": [
+	"aluminum/200","primary-processor/10"
+	],
+	"category": "defense",
+	"research":"S.P.U.A"
+}

@@ -1,9 +1,7 @@
 {
 	"type": "ItemTurret",
-	"name": "伦琴",
-	"description": "中大型双轨速射轨道炮，使用放射性物质作弹药",
-	"details": "吔！食我伦琴射线辣！",
 	"health": 1350,
+	"unitSort": "strongest",
 	"consumes": {
 		"power": 6,
 		"coolant": {
