@@ -28,6 +28,7 @@ Greelian.atmosphereRadOut = 0.3;
 Greelian.atmosphereColor = Greelian.lightColor = Color.valueOf("25C9AB90");
 Greelian.iconColor = Color.valueOf("25C9AB"),
 Greelian.hiddenItems.addAll(Items.erekirItems).removeAll(Items.serpuloItems);
+exports.Greelian = Greelian;
 
 const 硬着陆 = new SectorPreset("硬着陆", Greelian, 1);
 硬着陆.description = "现在，外乡人，我们还不了解你的能力。这是一片荒地，敌人只有少数巡逻队在此，拿下它。";
