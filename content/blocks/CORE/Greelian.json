@@ -3,12 +3,7 @@
     "description": "格列利安的分支.",
     "alwaysUnlocked": true,
     "buildVisibility": "editorOnly",
-    "type": "LightBlock",
+    //"type": "LightBlock",
     "health": 800,
-    "size": 2,
-   "research": {
-  "root": true,
-  "name": "[#AEBF82FF]格列利安",
-  "requiresUnlock": false
-}
+    "size": 2
 }
