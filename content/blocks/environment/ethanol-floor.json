@@ -1,0 +1,10 @@
+{
+	"type": "floor",
+	"name": "乙醇地板",
+	"liquidDrop": "ethanol",
+	"cacheLayer":"water",
+	"speedMultiplier": 1.1,
+	"isLiquid":"true",
+	"variants":1,
+	"playerUnmineable": true
+}

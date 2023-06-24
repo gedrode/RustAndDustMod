@@ -1,0 +1,13 @@
+{
+	"name": "乙醇",
+	"description": "易燃液体，与工业方面拥有较广泛用途",
+	"details": "谁想到的把这B玩意灌进炮塔的？！！！还TM有效！！！",
+	"alwaysUnlocked":false,
+	"color": "40ea90",
+	"flammability": 1,
+	"temperature": 0.45,
+	"heatCapacity": 1.35,
+	"viscosity": 0.3,
+	"explosiveness": 0,
+	"research": "Greelian"
+}
