@@ -240,7 +240,7 @@
 	"inaccuracy": 0,
 	"xRand": 0,
 	"ammoUseEffect": "casing2Double",
-	"rotateSpeed": 3,
+	"rotateSpeed": 2,
 	"shake": 2,
 	"shootSound": "railgun",
 	"ammoTypes": {

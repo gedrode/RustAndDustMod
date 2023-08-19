@@ -5,16 +5,18 @@
     "health":600,
 	"size":5,
 	"consumes":{
-		"power":2,
+		"power":2.5,
 		"items": {	"items": [
-	{"item":"silicon","amount":140},
+	{"item":"aluminum","amount":140},
+	{"item":"titanium","amount":80},
 	{"item":"steel","amount":150},
-	{ "item": "primary-processor", "amount": 45 }
+	{ "item": "primary-processor", "amount": 25 }
 	]
 		}
 },
 	"upgrades":[
         ["T2","T3"],
+        ["hl2","hl3"],
 		["A2","A3"]
 	],
 

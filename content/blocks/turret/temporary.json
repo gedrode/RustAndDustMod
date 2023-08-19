@@ -27,7 +27,7 @@
 	"ammoTypes": {
 		"copper": {
 			"speed": 5,
-			"damage": 11,
+			"damage": 5,
 			"lifetime": 24,
 			"width": 7,
 			"height": 8,
@@ -37,7 +37,7 @@
 		"scrap": {
 			"reloadMultiplier": 2,
 			"speed": 5,
-			"damage": 8,
+			"damage": 3.25,
 			"lifetime": 24,
 			"width": 7,
 			"height": 8,
@@ -47,7 +47,7 @@
 				"lead": {
 			"reloadMultiplier": 0.8,
 			"speed": 5,
-			"damage": 12,
+			"damage": 8,
 			"lifetime": 24,
 			"width": 7,
 			"height": 8,

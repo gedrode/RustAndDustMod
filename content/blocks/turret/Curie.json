@@ -23,7 +23,7 @@
 	"velocityRnd": 0.27,
 	"xRand": 0,
 	"ammoUseEffect": "casing2Double",
-	"rotateSpeed": 12,
+	"rotateSpeed": 2,
 	"shake": 1,
 	"shootSound": "CurieS",
 	"drag": 0.02,

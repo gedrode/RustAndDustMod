@@ -3,7 +3,7 @@
 	"name": "特种单位组装厂",
 	"description": "使用组装技术进行特种单位的建造",
 	"health": 6800,
-	"size": 6,
+	"size": 5,
 	"liquidCapacity": 120,
 	"consumes": {
 		"power": 10,

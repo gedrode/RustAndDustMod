@@ -7,9 +7,11 @@
 	"consumes":{
 		"power":4.5,
 		"items": {	"items": [
-	{"item":"silicon","amount":440},
+	{"item":"aluminumAlloy","amount":440},
+	{"item":"zinc","amount":450},
+	{"item":"titanium","amount":550},
 	{"item":"steel","amount":300},
-	{ "item": "primary-processor", "amount": 55 }
+	{ "item": "primary-processor", "amount": 50 }
 	]
 		}
 },
@@ -22,6 +24,7 @@
 	"requirements": [
 		{"item":"steel","amount":1600},
     	{"item":"thorium","amount":950},
+    	{"item":"zinc","amount":1000},
 		{"item":"titanium","amount":1000},
 		{"item":"primary-processor","amount":150}
 	],

@@ -47,7 +47,7 @@
 	"inaccuracy": 0,
 	"shake": 3,
 	"shootCone": 20,
-	"rotateSpeed": 9,
+	"rotateSpeed": 3,
 	"ammoTypes": {
 		"titanium": {
 			"type": "ShrapnelBulletType",
@@ -111,5 +111,5 @@
 		}
 	],
 	"category": "turret",
-	"research": "LancerA"
+	"research": "Lancer-II"
 }

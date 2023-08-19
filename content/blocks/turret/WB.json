@@ -5,7 +5,7 @@
 	"health": 1080,
 	"size": 3,
                 "range":300,
-	"reload": 20,
+	"reload": 60,
 	"ammoPerShot": 2,
 	"consumes": {
 		"coolant": {
@@ -13,7 +13,7 @@
 			"optional": true
 		}
 	},
-	"inaccuracy": 0.2,
+	"inaccuracy": 1,
 	"xRand": 0,
 	"shoot": {
 			"shots": 3,
@@ -23,7 +23,7 @@
 			"spread": 4
 		},
 	"ammoUseEffect": "casing2Double",
-	"rotateSpeed": 12,
+	"rotateSpeed": 4,
 	"shake": 1,
 	"shootSound": "shootAlt",
 	"drag": 0.006,

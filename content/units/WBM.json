@@ -1,6 +1,7 @@
 {
 "type": "missile",
 "template": "MissileUnitType",
+"lifetime":20
 "name":"野蜂导弹"
 "speed":10
 "outlineColor":"2d2f39"

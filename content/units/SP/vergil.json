@@ -1,0 +1,299 @@
+{
+	"type":"flying",//空军
+	"controller": "flyingAI",//ai
+	"faceTarget": true,//攻击转头
+	"circleTarget": true,//绕圈攻击
+	"omniMovement": true,//无处不在
+	"rotateMoveFirst": true,//转弯优先
+	"flying":true,//飞行
+	"accel": 0.2,"drag": 0.1,//加速，惯性
+	"engineSize":5,//引擎尺寸
+	"engineColor": "8DEEFFFF",//引擎颜色
+	"engineOffset":11.25,//引擎偏移
+	"trailLength": 5,//尾迹长
+	"trailColor": "8DEEFFFF",//尾迹颜色
+
+	"speed":8.5,
+	"hitSize":14.25,
+	"name": "维吉尔",
+	"health": 5000,
+	"description":"在战争中死亡的战士被诅咒，它们的怨恨变成了一个毫无意识的杀戮之魂……",
+	"armor":15,
+	"drawCell": false,//画队伍
+	"outlineColor": "2E2F34FF",
+
+	"immunities":[
+	],
+
+	"targetFlags": [
+	"turret",
+	"core",
+	],
+
+	"abilities":[
+	{"type":"ShieldArcAbility",//弧形盾
+	"region":"calamity-杀戮之魂-shield",
+	"radius":30.5,//半径
+	"angle":138,//角度
+	"regen":0.3,//再生值
+	"cooldown":480,//破盾后冷却
+	"max":1000,//最大护盾
+	"width":8,//宽度
+	"x": -3.75,"y":3.75,
+	}
+	{
+	"type": "RegenAbility",//自我修复
+	"percentAmount": 0.01,//修复百分比
+	}	],
+
+	"weapons": [
+		{"name": "杀戮之魂-weapon",
+		"reload":60,//攻速
+		"x":11.375,"y":-7.25,//武器位置
+		"mirror":false,//镜像
+		"top":false,//上部图层
+		"shootX": -16,"shootY": 40,
+		"layerOffset": -0.001,//图层偏移
+		"recoil": -3,//后坐力
+		"shake": 0.5,//震动
+		"rotationLimit": 20,//旋转限制
+		"rotateSpeed": 1,//旋转速度
+		"rotate": true,//旋转
+		"inaccuracy":2,//不准确度
+		"range": 400,//范围
+
+		"shoot":{"firstShotDelay":60,//前摇
+		}
+
+		"parts": [
+		{"type": "RegionPart",
+		"suffix": "-right", //
+		"moveRot": 75,//旋转移动
+		"progress": "recoil",
+		"outline":true,
+
+		"children":[
+		{"type": "RegionPart",
+		"suffix": "-knife",//
+		"layerOffset": -0.002,//图层偏移
+		"top":false,//上部图层
+		"x": 0,"y": 17.5,
+		"moveRot": 165,//旋转移动
+/*		"moves": [
+		{"type": "PartMove",//块移动
+		"Rotation": 30,//武器角度
+		}	]*/	}
+		]	}	]
+
+		"bullet": {
+		"damage": 650,
+		"speed": 16,
+		"lifetime":25,
+		"sprite": "calamity-刀光",//子弹贴图
+		"shrinkY": 0,"shrinkX": 0,//子弹变形程度
+		"width":72,"height":72,//子弹宽长度
+		"frontColor": "59DBFFFF",//中心颜色
+		"backColor": "8DEEFFFF",//边缘颜色
+		"homingRange":160//跟踪半径
+		"homingPower":10,//跟踪力度
+		"pierce":true,//穿透
+		"pierceBuilding":true//穿透建筑
+
+		"trailChance": 1,
+		"trailRotation": true,
+		"trailEffect": {
+		"type": "ParticleEffect",
+		"particles": 2,
+		"length": 72,
+		"lifetime": 10,
+		"sizeFrom": 16,
+		"colorFrom": "8598BFFF",//中心颜色
+		"colorTo": "DEEDFFFF",//边缘颜色
+		"region": "calamity-刀光-effect"},
+
+	"shootEffect": {//攻击特效
+		"type": "multiEffect",//多种特效
+		"effects": [//特效
+		{"type": "WaveEffect",
+		"region": "calamity-prism",//区域贴图
+		"lifetime": 10,//存在时间
+		"sizeFrom": 0,
+		"sizeTo": 15,
+		"strokeFrom": 1.5,
+		"strokeTo": 0,
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF"},
+		{
+		"type": "ParticleEffect",
+		"region":"calamity-prism",//区域贴图
+		"particles": 3,//粒子数量
+		"length": 40,//长度
+		"lifetime": 48,//存在时间
+		"interp": "circleOut",//中间部分
+		"sizeInterp": "pow5Out",//大小部分
+		"cone": 0,//角度
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF",
+		"sizeFrom": 5.5,
+		"sizeTo": 0
+		}	]	}
+	"hitEffect": {//碰撞特效
+		"type": "multiEffect",//多种特效
+		"effects": [//特效
+		{"type": "WaveEffect",
+		"region": "calamity-prism",//区域贴图
+		"lifetime": 25,//存在时间
+		"sizeFrom": 0,
+		"sizeTo": 20,
+		"strokeFrom": 3.5,
+		"strokeTo": 0,
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF"},
+
+		{"type": "ParticleEffect",
+		"region": "calamity-prism",//区域贴图
+		"particles": 9,//粒子数量
+		"length": 40,//长度
+		"lifetime": 48,//存在时间
+		"interp": "circleOut",//中间部分
+		"sizeInterp": "pow5Out",//大小部分
+		"cone": 360,//角度
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF",
+		"sizeFrom": 4.5,
+		"sizeTo": 0
+		}	]	}
+		}	}
+/*												*/
+		{"name": "杀戮之魂-weapon",
+		"reload":140,//攻速
+		"x":0,"y":0,//武器位置
+		"mirror":false,//镜像
+		"shootX": 0,"shootY": 2,
+		"shootSound": "none",//
+		"shake": 0.5,//震动
+		"rotationLimit": 20,//旋转限制
+		"rotateSpeed": 10,//旋转速度
+		"rotate": true,//旋转
+		"range": 400,//范围
+
+		"bullet": {
+//		"type": "RailBulletType",
+		"damage": 1000,
+//		"length":240,
+//		"pierceDamageFactor":0,
+		"recoil":-80,//
+		"speed": 16,
+		"lifetime":10,
+		"shrinkY": 0,"shrinkX": 0,//子弹变形程度
+		"width":20,"height":20,//子弹宽长度
+		"pierce":true,//穿透
+		"pierceBuilding":true//穿透建筑
+
+		"trailChance": 1,
+		"trailRotation": true,
+		"trailEffect": {
+		"type": "ParticleEffect",
+		"particles": 2,
+		"length": 72,
+		"lifetime": 10,
+		"sizeFrom": 16,
+		"colorFrom": "8598BFFF",//中心颜色
+		"colorTo": "DEEDFFFF",//边缘颜色
+		"region": "calamity-刀光-effect"},
+
+	"shootEffect": {//攻击特效
+		"type": "multiEffect",//多种特效
+		"effects": [//特效
+		{"type": "WaveEffect",
+		"region": "calamity-prism",//区域贴图
+		"lifetime": 10,//存在时间
+		"sizeFrom": 0,
+		"sizeTo": 15,
+		"strokeFrom": 1.5,
+		"strokeTo": 0,
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF"},
+		{
+		"type": "ParticleEffect",
+		"region":"calamity-prism",//区域贴图
+		"particles": 3,//粒子数量
+		"length": 40,//长度
+		"lifetime": 48,//存在时间
+		"interp": "circleOut",//中间部分
+		"sizeInterp": "pow5Out",//大小部分
+		"cone": 0,//角度
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF",
+		"sizeFrom": 5.5,
+		"sizeTo": 0
+		}	]	}
+	"hitEffect": {//碰撞特效
+		"type": "multiEffect",//多种特效
+		"effects": [//特效
+		{"type": "WaveEffect",
+		"region": "calamity-prism",//区域贴图
+		"lifetime": 25,//存在时间
+		"sizeFrom": 0,
+		"sizeTo": 20,
+		"strokeFrom": 3.5,
+		"strokeTo": 0,
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF"},
+
+		{"type": "ParticleEffect",
+		"region": "calamity-prism",//区域贴图
+		"particles": 9,//粒子数量
+		"length": 40,//长度
+		"lifetime": 48,//存在时间
+		"interp": "circleOut",//中间部分
+		"sizeInterp": "pow5Out",//大小部分
+		"cone": 360,//角度
+		"colorFrom": "8598BFFF",
+		"colorTo": "DEEDFFFF",
+		"sizeFrom": 4.5,
+		"sizeTo": 0
+		}	]	}
+		}	}
+/*												*/
+/*		{"name":"杀戮之魂-weapon",//武器贴图的名字
+		"top":true,
+		"mirror":true,
+		"alternate":false,
+		"x":0,"y":7.5,
+		"shootSound":"missile",
+		"reload":70,
+		"recoil": 2,//武器后坐力
+		"rotationLimit": 20,//旋转限制
+		"rotateSpeed": 1,//旋转速度
+		"rotate": true,//旋转
+		"inaccuracy":2,//不准确度
+		"range": 400,//范围
+
+		"shoot": {
+		"type": "shootSpread",//类型,扩散子弹
+		"firstShotDelay":60,//前摇
+		"shots": 20,//每轮子弹
+		"spread": 4.5//扩散区域
+		},
+
+		"bullet":{
+		"sprite":"calamity-none",//子弹贴图
+		"shrinkY": 0,"shrinkX": 0,//子弹变形程度
+		"damage": 20,
+		"speed": 16,
+		"knockback":5,//击退
+		"reloadMultiplier":0.5,
+		"lifetime":4.5,
+		"width":20,	"height":15,//宽长度
+		"frontColor": "59DBFFFF",//中心颜色
+		"backColor": "8DEEFFFF",//边缘颜色
+//尾迹
+		"trailColor": "DEEDFFFF",
+		"lightColor": "8598BFFF",
+		"trailParam": 5,//尾迹参数
+		"trailWidth": 5,"trailLength": 2,//尾迹宽长度
+//特效
+	"hitEffect":"none"
+		}	}*/	]
+}

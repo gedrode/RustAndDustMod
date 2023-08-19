@@ -29,7 +29,7 @@
 	},
 	"inaccuracy": 0.5,
 	"ammoUseEffect": "casing2Double",
-	"rotateSpeed": 8,
+	"rotateSpeed": 1.5,
 	"shake": 1,
 	"shootSound": "STS",
 	"ammoTypes": {

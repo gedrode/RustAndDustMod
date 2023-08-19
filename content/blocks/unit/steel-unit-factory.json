@@ -8,10 +8,10 @@
 	"consumes":{"power":4	},
 	"plans":[
 	{ "unit": "T1",
-	"time": 1800, 
+	"time": 1600, 
 	"requirements": [ 
 { "item": "silicon", "amount": 60},
-{ "item": "graphite", "amount": 30},
+{ "item": "graphite", "amount": 20},
 { "item": "steel", "amount": 45}
 	]	},	
 	{ "unit": "A1",
@@ -19,6 +19,13 @@
 	"requirements": [ 
 { "item": "silicon", "amount": 45 },
 { "item": "steel", "amount": 20 }
+]	},
+	{ "unit": "hl1",
+	"time":1000, 
+	"requirements": [ 
+{ "item": "silicon", "amount": 35 },
+{ "item": "aluminum", "amount": 25 },
+{ "item": "steel", "amount": 45 }
 ]	}
 ],
 	"requirements": [

@@ -10,7 +10,7 @@
 	"shake": 8,
 	"unitSort": "strongest",
 	"consumes": {
-		"power": 12.5,
+		"power": 20,
 		"coolant": {
 			"amount": 2,
 			"optional": true
@@ -247,13 +247,13 @@
 	"targetGround": true,
 	"targetAir": true,
 	"inaccuracy": 0,
-	"rotateSpeed": 2.3,
+	"rotateSpeed": 0.8,
 	"maxAmmo": 36,
 	"ammoPerShot": 36,
 	"ammoTypes": {
 		"zinc": {
 			"type": "basicBulletType",
-			"sprites":"rad-bigstar",
+			"sprites":"rad-spnova",
 			"hitEffect": {
 				"type": "MultiEffect",
 				"effects": [

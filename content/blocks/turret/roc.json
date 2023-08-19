@@ -22,7 +22,7 @@
 	"inaccuracy": 0,
 	"xRand": 0,
 	"ammoUseEffect": "casing2Double",
-	"rotateSpeed": 12,
+	"rotateSpeed": 1.75,
 	"shake": 1,
 	"shootSound": "rocs",
 	"ammoTypes": {

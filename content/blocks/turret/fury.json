@@ -141,7 +141,7 @@
 			"optional": true
 		}
 	},
-	"rotateSpeed": 2.6,
+	"rotateSpeed": 2.5,
 	"range": 300,
 	"category": "turret",
 	"research":  "shower",	

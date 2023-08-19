@@ -1,0 +1,102 @@
+{
+	"speed": 1.9,	
+	"drag":0.05,"accel":0.1,
+	"rotateSpeed":5,
+	"ammoCapacity": 300,
+	"hitSize":26,
+	"flying": true,
+	"faceTarget": true,
+	"health": 18990,
+	"armor":18,
+	"engineOffset": 6,
+	"engineSize": 0,
+	"research": "MK3-upgrade-kit",
+	"weapons":[ {"name":"hla5-weapon",
+	"x":0,"y":0,
+	"mirror": false,
+	"reload":220,
+	"top":false,
+	"rotate": false,
+	"shootSound":"STS",
+		"shoot": {
+		"type": "ShootMulti",
+		"source": {},
+		"dest": [
+ {
+			"shots": 10,
+			"shotDelay": 2,
+			"type": "ShootAlternate",
+			"barrels": 2,
+			"spread": 8
+		},
+ {
+			"shots": 20,
+			"shotDelay": 2,
+			"firstShotDelay":30,
+			"type": "ShootAlternate",
+			"barrels": 4,
+			"spread": 6
+		},
+ {
+			"shots": 20,
+			"shotDelay": 2,
+			"firstShotDelay":80,
+			"type": "ShootAlternate",
+			"barrels": 6,
+			"spread": 6
+		},
+ {
+			"shots": 30,
+			"shotDelay": 2,
+			"firstShotDelay":130,
+			"type": "ShootAlternate",
+			"barrels": 8,
+			"spread": 6
+		},
+		{"type":"ShootSpread",
+	"firstShotDelay":200,
+	"shots":20,
+	"spread": 0.2
+	}
+		]
+	},
+	"inaccuracy": 0.2,
+	"velocityRnd": 0.17,
+	"bullet":{
+	"knockback":0.25,
+	"recoil":0.1,
+    "shrinkY":0,
+	"damage": 35,
+	"width": 8,
+	"height": 16,
+	"speed": 20,
+	"lifetime":15
+	} 	},
+	 {"name":"hla5-weapon1",
+	"x":18,"y":0,
+	"mirror": true,
+	"reload":40,
+	"under":true,
+	"rotate": false,
+	"inaccuracy": 4.2,
+	"shootSound":"missile",
+		"shoot": {
+			"shots": 4,
+			"shotDelay": 6,
+			"type": "ShootAlternate",
+			"barrels": 3,
+			"spread": 4
+		},
+	"bullet":{
+		"type":"MissileBulletType"
+		"knockback":0.25,
+				"splashDamage":185,
+		"splashDamageRadius":20,
+    "shrinkY":0,
+	"width": 10,
+	"height": 16,
+	"speed": 13.5,
+	"lifetime":20
+	} 	}
+	    ]
+}

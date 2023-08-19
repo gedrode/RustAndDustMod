@@ -1,0 +1,76 @@
+{
+	"speed": 2.15,	
+	"drag":0.03,"accel":0.1,
+	"rotateSpeed":5,
+	"ammoCapacity": 300,
+	"hitSize":36,
+	"flying": true,
+	"faceTarget": true,
+	"health": 6090,
+	"armor":10,
+	"engineOffset": 6,
+	"engineSize": 0,
+	"research": "MK4-upgrade-kit",
+	"weapons":[ {"name":"hla4-weapon",
+	"x":-10,"y":0,
+		"mirror": true,
+	"reload":100,
+	"top":false,
+	"rotate": false,
+	"inaccuracy": 0.2,
+	"shootSound":"ALDA",
+		"shoot": {
+		"type": "ShootMulti",
+		"source": {
+			"type": "ShootAlternate",
+			"barrels": 2,
+			"spread": 2},
+		"dest": [
+	{
+		"shots":6,
+	"shotDelay":10
+	},
+	{
+		"shots":20,
+	"shotDelay":2,
+	"firstShotDelay":70
+	}
+		]
+	},
+	"bullet":{
+	"knockback":0.25,
+    "shrinkY":0,
+	"damage": 22,
+	"width": 6,
+	"height": 16,
+	"speed": 10,
+	"lifetime":20
+	} 	},
+	 {"name":"hla4-weapon1",
+	 "inaccuracy": 3.2,
+	"x":18,"y":0,
+		"mirror": true,
+	"reload":105,
+	"under":true,
+	"rotate": false,
+	"shootSound":"missile",
+		"shoot": {
+			"shots": 8,
+			"shotDelay": 6,
+			"type": "ShootAlternate",
+			"barrels": 4,
+			"spread": 2
+		},
+	"bullet":{
+		"type":"MissileBulletType"
+		"knockback":0.25,
+				"splashDamage":200,
+		"splashDamageRadius":30,
+    "shrinkY":0,
+	"width": 10,
+	"height": 16,
+	"speed": 13.5,
+	"lifetime":20
+	} 	}
+	    ]
+}

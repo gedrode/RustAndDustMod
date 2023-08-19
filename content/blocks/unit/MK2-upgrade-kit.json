@@ -7,7 +7,7 @@
 	"consumes":{
 		"power":2,
 		"items": {	"items": [
-	{"item":"silicon","amount":40},
+	{"item":"aluminum","amount":40},
 	{"item":"steel","amount":50},
 	{ "item": "primary-processor", "amount": 10 }
 	]
@@ -15,6 +15,7 @@
 },
 	"upgrades":[
         ["T1","T2"],
+        ["hl1","hl2"],
 		["A1","A2"]
 	],
 

@@ -47,13 +47,14 @@
 				"heatColor": "FF7055FF"
 			}
 ],
+}
 	"ammoTypes": {
-    "butane":{
+    "oil":{
     "type": "ContinuousFlameBulletType",
     "lifetime":15,
     "speed":0, 
     "length":180,
-    "weight":10,
+    "weight":8,
     "knockback":0.6,
  	"status":"melting",
  	"statusDuration":600,
@@ -68,4 +69,3 @@
 	"category": "turret",
 	"research": "temporary"
 	}
-}

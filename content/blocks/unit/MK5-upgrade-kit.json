@@ -7,9 +7,11 @@
 	"consumes":{
 		"power":6.5,
 		"items": {	"items": [
-	{"item":"silicon","amount":140},
-	{"item":"steel","amount":150},
-	{ "item": "primary-processor", "amount": 45 }
+	{"item":"silicon","amount":1240},
+	{"item":"radium","amount":1050},
+	{"item":"steel","amount":2050},
+	{"item":"aluminumAlloy","amount":1400},
+	{ "item": "primary-processor", "amount": 55 }
 	]
 		}
 },
@@ -20,9 +22,10 @@
 
 	"constructTime":10600,
 	"requirements": [
-		{"item":"steel","amount":600},
-    	{"item":"thorium","amount":450},
-		{"item":"titanium","amount":500},
+		{"item":"steel","amount":2500},
+    	{"item":"thorium","amount":2050},
+		{"item":"titanium","amount":1800},
+		{"item":"surge-alloy","amount":1000},
 		{"item":"primary-processor","amount":150}
 	],
 	"category":"units",
