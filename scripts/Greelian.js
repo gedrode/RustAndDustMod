@@ -95,7 +95,7 @@ const 霞光前哨 = new SectorPreset("霞光前哨", Greelian, 14);
 霞光前哨.localizedName = "霞光前哨";
 exports.霞光前哨 = 霞光前哨;
 librad.addToResearch(霞光前哨, {
-	parent: "弱效疫苗",
+	parent: "硫海断崖",
 	objectives: Seq.with(
-	new Objectives.Research(霞光前哨))
+	new Objectives.Research(硫海断崖))
 });

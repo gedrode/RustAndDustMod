@@ -49,6 +49,20 @@ exports.limitBuild = (block, num) => {
 	return block.localizedName + exports.bundle("text-limitBuild", num);
 }
 
+exports.AngleTrns = (ang, rad, rad2) => {
+	if (rad2) {
+		return {
+			x: Angles.trnsx(ang, rad, rad2),
+			y: Angles.trnsy(ang, rad, rad2)
+		}
+	} else {
+		return {
+			x: Angles.trnsx(ang, rad),
+			y: Angles.trnsy(ang, rad)
+		}
+	}
+}
+
 exports.SpeedUpTurret = (type, name, min/*最快攻速*/, change/*每次快多少攻速(默认1帧)*/, limit/*建筑数量限制(不写就是无限制)*/) => {
 	if (!change) change = 1;
 	let b = extend(type, name, {

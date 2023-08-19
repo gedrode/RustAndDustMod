@@ -1,9 +1,52 @@
 const status = require('radstatus');
-const {DeathStatusAbility} = require('radability')
-const {ToxicAbility} = require('radability')
-//const status = require('SPstatus');
+
+function DeathStatusAbility(status, duration, range) {
+	return extend(Ability, {
+		death(unit) {
+			Units.nearby(null, unit.x, unit.y, range, other => {
+				other.apply(status, duration);
+			})
+		},
+		localized() {
+			return Core.bundle.format("ability.deathStatus", status.emoji());
+		}
+	})
+}
+exports.DeathStatusAbility = DeathStatusAbility
 
 
+
+let i = 0;
+function ToxicAbility(damage,range) {
+	return extend(Ability,{
+		update(unit){
+			i += Time.delta
+			if (i >= 15) {
+				Units.nearby(null, unit.x, unit.y, range, other => {
+					other.damagePierce(damage / 4);
+					other.apply(s, 60 * 15);
+				})
+				Units.nearbyBuildings(unit.x, unit.y, range, b => {
+					b.health -= damage / 4
+					if(b.health <= 0){b.kill()}
+				})
+				Fx.titanSmoke.at(
+					unit.x + Mathf.range(range * Math.SQRT1_2),
+					unit.y + Mathf.range(range * Math.SQRT1_2),
+					Color.valueOf("92ab117f")
+				)
+				i = 0
+			}
+		},
+		draw(unit){
+			this.super$draw(unit);
+			for(let j = 0;j < 4;j++){
+				let r = unit.rotation + j * 360 / 4;
+				Lines.arc(unit.x, unit.y, range, 0.15, r);
+			}
+		}
+	})
+}
 
 const s = new StatusEffect("s")
 Object.assign(s,{
@@ -483,6 +526,102 @@ Object.assign(new Weapon("rad-strobe-weapon"), {
 		fragBullet: Object.assign(new BulletType(), {
 			spawnUnit: flashbang
 		}),
+	})
+})
+)
+
+
+
+const yyz = new UnitType("yyz");
+Object.assign(yyz,{
+	speed: 0,
+	isEnemy: false,
+	envDisabled: 0,
+	targetable: false,
+	hittable: false,
+	playerControllable: false,
+	createWreck: false,
+	createScorch: false,
+	logicControllable: false,
+	useUnitCap: false,
+	allowedInPayloads: false,
+	constructor: () => new TimedKillUnit.create(),
+	physics: false,
+	bounded: false,
+	hidden: true,
+	lifetime: 200 * 1.5,
+	health: 10000,
+	drawMinimap: false,
+	flying: false,
+	drawCell: false,
+	deathSound: Sounds.none,
+})
+yyz.abilities.add(
+Object.assign(new EnergyFieldAbility(280, 4, 360), {
+	x: 0,
+	y: 0,
+	maxTargets: 100,
+	color: Color.valueOf("CDACFFFF"),
+	status: status.suppress,
+	statusDuration: 120,
+	healPercent: 3,
+	sectors: 3,
+	sectorRad: 0.18,
+	effectRadius: 4,
+	rotateSpeed: 5
+})
+)
+
+
+const 我有抑郁症 = new UnitType("我有抑郁症");
+exports.我有抑郁症 = 我有抑郁症;
+Object.assign(我有抑郁症, {
+	outlineColor: Pal.neoplasmOutline,
+	envDisabled: Env.none,
+	healFlash: true,
+	healColor: Pal.neoplasm1,
+	speed: 1.2,
+	drag: 0.12,
+	hitSize: 20,
+	rotateSpeed: 3,
+	health: 808000,
+	buildSpeed:4.25,
+	armor: 8,
+        shadowElevation: 0.1,
+	groundLayer: 74,
+
+	constructor: () => new MechUnit.create(),
+})
+我有抑郁症.weapons.add(
+Object.assign(new Weapon("rad-我有抑郁症-weapon"), {
+	layerOffset: 0.0001,
+	reload: 200,
+	shootY: 0.75,
+	recoil: 3,
+	rotate: false,
+	rotateSpeed: 3.7,
+	mirror: true,
+	x: 20,
+	y: -0.25,
+	heatColor: Color.valueOf("92AB11"),
+	cooldownTime: 50,
+    	inaccuracy: 5,
+	shootSound: Sounds.mediumCannon,
+	bullet: Object.assign(new ArtilleryBulletType(20,1),{
+		lifetime: 20,
+		height: 19,
+		width: 17,
+		backColor: Color.valueOf("92AB11"),
+		frontColor: Color.white,
+		trailColor: Color.valueOf("92AB11"),
+		shrinkX: 0,
+		shrinkY: 0,
+		hitShake: 0,
+		fragBullets: 1,
+		hitSound: Sounds.none,
+		fragBullet: Object.assign(new BulletType(), {
+			spawnUnit: yyz
+		})
 	})
 })
 )
